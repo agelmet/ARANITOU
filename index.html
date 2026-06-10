@@ -4,51 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Κατερίνα Αρανίτου | Κλινική Ψυχολόγος & Τραυματοθεραπεύτρια EMDR</title>
-    <meta name="description" content="Η Κατερίνα Αρανίτου είναι Κλινική Ψυχολόγος, Αξιωματικός Υγειονομικού και Τραυματοθεραπεύτρια EMDR στον Χολαργό. Προσφέρει εξειδικευμένη υποστήριξη σε ενήλικες, εφήβους και εταιρείες.">
+    <meta name="description" content="Η Κατερίνα Αρανίτου είναι Κλινική Ψυχολόγος, Αξιωματικός Υγειονομικού και Τραυματοθεραπεύτρια EMDR στον Χολάρργο. Εξειδικευμένη υποστήριξη σε ενήλικες, εφήβους και εταιρείες.">
     
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 
     <style>
         :root {
-            /* Design Tokens: A color palette evoking safety, structure, and clinical grounding */
-            --bg-base: #F7F6F2;       /* Warm architectural white */
-            --bg-surface: #EAE8E1;    /* Grounding stone */
-            --bg-dark: #222629;       /* Deep Slate / Military Navy influence */
-            --bg-dark-elevated: #2C3236; 
-            --text-main: #2A3035;
-            --text-muted: #5A646A;
-            --text-light: #F0F2F5;
-            --accent-primary: #586B63; /* Sage/Olive - Growth, healing, military subtle nod */
-            --accent-light: #8BA196;
+            /* Design Tokens: Refined Palette with Absolute Control */
+            --bg-base: #F9F8F5;       /* Pristine gallery warm white */
+            --bg-surface: #EFECE6;    /* Grounded soft stone tone */
+            --bg-dark: #191C1E;       /* Striking deep command graphite */
+            --bg-dark-card: #222629;  /* Accessible container overlay background */
+            --text-main: #202426;
+            --text-muted: #545E63;
+            --text-light: #F4F5F6;
+            --accent-primary: #4C5D55; /* Therapeutic Olive / Military Understated Satin Accent */
+            --accent-light: #7E9489;
             
-            /* Typography */
+            /* Typography Scale - Fixed & Highly Recalibrated for Scale Control */
             --font-display: 'Lora', serif;
             --font-body: 'Inter', sans-serif;
             
-            /* Fluid Spacing & Typography via clamp() */
-            --text-xs: clamp(0.75rem, 0.8vw, 0.875rem);
-            --text-sm: clamp(0.875rem, 1vw, 1rem);
-            --text-base: clamp(1rem, 1.2vw, 1.125rem);
-            --text-lg: clamp(1.25rem, 1.5vw, 1.5rem);
-            --text-xl: clamp(1.5rem, 2vw, 2rem);
-            --text-2xl: clamp(2rem, 3.5vw, 3.5rem);
-            --text-3xl: clamp(2.5rem, 5vw, 5.5rem);
+            --text-xs: clamp(0.75rem, 0.75vw, 0.85rem);
+            --text-sm: clamp(0.85rem, 0.9vw, 0.95rem);
+            --text-base: clamp(0.95rem, 1.1vw, 1.05rem);
+            --text-lg: clamp(1.15rem, 1.3vw, 1.35rem);
+            --text-xl: clamp(1.4rem, 1.8vw, 1.8rem);
+            --text-2xl: clamp(1.8rem, 2.5vw, 2.6rem);
+            --text-3xl: clamp(2.3rem, 3.8vw, 3.8rem); /* Controlled maximum caps to prevent title blowout */
             
             --space-xs: clamp(0.5rem, 1vw, 1rem);
             --space-sm: clamp(1rem, 2vw, 2rem);
             --space-md: clamp(2rem, 4vw, 4rem);
-            --space-lg: clamp(4rem, 8vw, 8rem);
-            --space-xl: clamp(6rem, 12vw, 12rem);
+            --space-lg: clamp(3.5rem, 6vw, 6rem);
+            --space-xl: clamp(5rem, 9vw, 9rem);
 
-            /* Easing Curves */
             --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
             --ease-in-out-circ: cubic-bezier(0.85, 0, 0.15, 1);
-            --transition-smooth: 0.6s var(--ease-out-expo);
+            --transition-smooth: 0.7s var(--ease-out-expo);
         }
 
-        /* Base Resets */
+        /* Universals & Smooth Architecture */
         *, *::before, *::after {
             box-sizing: border-box;
             margin: 0;
@@ -64,10 +63,9 @@
             font-family: var(--font-body);
             background-color: var(--bg-base);
             color: var(--text-main);
-            line-height: 1.6;
+            line-height: 1.65;
             overflow-x: hidden;
             -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
         }
 
         ::selection {
@@ -75,46 +73,41 @@
             color: var(--bg-base);
         }
 
-        /* Custom Scrollbar */
         ::-webkit-scrollbar {
-            width: 8px;
+            width: 6px;
         }
         ::-webkit-scrollbar-track {
             background: var(--bg-base);
         }
         ::-webkit-scrollbar-thumb {
             background: var(--accent-primary);
-            border-radius: 4px;
         }
 
-        /* Typography */
-        h1, h2, h3, h4, h5, h6 {
+        /* Structured Elements */
+        h1, h2, h3, h4 {
             font-family: var(--font-display);
             font-weight: 500;
-            line-height: 1.2;
+            line-height: 1.25;
             color: inherit;
         }
 
-        p { margin-bottom: 1.5em; }
+        p { 
+            margin-bottom: 1.25rem; 
+            font-weight: 400;
+            color: var(--text-muted);
+        }
         p:last-child { margin-bottom: 0; }
         
         a {
             color: inherit;
             text-decoration: none;
-            transition: color 0.3s ease;
+            transition: color 0.3s var(--ease-out-expo);
         }
 
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            object-fit: cover;
-        }
-
-        /* Layout Utility */
+        /* Layout Frameworks */
         .container {
             width: 100%;
-            max-width: 1440px;
+            max-width: 1300px;
             margin: 0 auto;
             padding: 0 var(--space-sm);
         }
@@ -129,9 +122,7 @@
             gap: var(--space-md);
         }
 
-        /* --- Components --- */
-
-        /* Loader */
+        /* Cinematic Page Loader */
         .loader {
             position: fixed;
             inset: 0;
@@ -141,7 +132,7 @@
             align-items: center;
             justify-content: center;
             z-index: 9999;
-            transition: transform 1s var(--ease-in-out-circ), opacity 1s ease;
+            transition: transform 0.8s var(--ease-in-out-circ), opacity 0.8s ease;
         }
         .loader.hidden {
             transform: translateY(-100%);
@@ -151,19 +142,19 @@
         .loader-logo {
             font-family: var(--font-display);
             font-size: var(--text-3xl);
-            animation: pulse 2s infinite ease-in-out;
+            animation: pulseGraceful 2s infinite ease-in-out;
         }
-        @keyframes pulse {
-            0%, 100% { opacity: 0.5; transform: scale(0.95); }
+        @keyframes pulseGraceful {
+            0%, 100% { opacity: 0.3; transform: scale(0.97); }
             50% { opacity: 1; transform: scale(1); }
         }
 
-        /* Navigation */
+        /* Clean Functional Navbar */
         .navbar {
             position: fixed;
             top: 0;
             width: 100%;
-            padding: var(--space-xs) var(--space-sm);
+            padding: var(--space-sm);
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -171,10 +162,10 @@
             transition: background-color 0.4s ease, backdrop-filter 0.4s ease, padding 0.4s ease;
         }
         .navbar.scrolled {
-            background-color: rgba(247, 246, 242, 0.95);
-            backdrop-filter: blur(10px);
-            padding: 10px var(--space-sm);
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+            background-color: rgba(249, 248, 245, 0.92);
+            backdrop-filter: blur(12px);
+            padding: 0.8rem var(--space-sm);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
         }
         .navbar.scrolled .logo-text { color: var(--text-main); }
         .navbar.scrolled .nav-links a { color: var(--text-main); }
@@ -183,12 +174,12 @@
         .brand-logo {
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 14px;
             z-index: 101;
         }
         .brand-logo .psi {
             font-family: var(--font-display);
-            font-size: 2rem;
+            font-size: 2.2rem;
             color: var(--accent-primary);
             line-height: 1;
         }
@@ -200,15 +191,16 @@
         }
         .logo-text .name {
             font-family: var(--font-display);
-            font-weight: 600;
+            font-weight: 500;
             font-size: var(--text-base);
-            letter-spacing: 0.02em;
+            letter-spacing: 0.01em;
         }
         .logo-text .title {
-            font-size: 0.75rem;
+            font-size: 0.7rem;
             text-transform: uppercase;
-            letter-spacing: 0.1em;
+            letter-spacing: 0.08em;
             color: var(--accent-light);
+            margin-top: 2px;
         }
 
         .nav-links {
@@ -217,10 +209,10 @@
         }
         .nav-links a {
             color: var(--text-light);
-            font-size: var(--text-sm);
+            font-size: var(--text-xs);
             font-weight: 500;
             text-transform: uppercase;
-            letter-spacing: 0.05em;
+            letter-spacing: 0.06em;
             position: relative;
         }
         .nav-links a::after {
@@ -231,27 +223,25 @@
             bottom: -4px;
             left: 0;
             background-color: currentColor;
-            transition: width 0.3s ease;
+            transition: width 0.3s var(--ease-out-expo);
         }
-        .nav-links a:hover::after {
-            width: 100%;
-        }
+        .nav-links a:hover::after { width: 100%; }
 
         .hamburger {
             display: none;
             flex-direction: column;
-            gap: 5px;
+            gap: 6px;
             cursor: pointer;
             z-index: 101;
         }
         .hamburger span {
-            width: 25px;
-            height: 2px;
+            width: 24px;
+            height: 1.5px;
             background-color: var(--text-light);
-            transition: 0.3s ease;
+            transition: transform 0.3s ease, opacity 0.3s ease;
         }
 
-        /* Hero Section */
+        /* Advanced Ambient Hero Section */
         .hero {
             position: relative;
             min-height: 100vh;
@@ -260,348 +250,449 @@
             display: flex;
             align-items: center;
             overflow: hidden;
-            padding-top: 80px;
         }
-        .hero-grid {
-            grid-template-columns: 1fr 1fr;
-            align-items: center;
-            height: 100%;
-        }
-        .hero-content {
-            padding-right: var(--space-md);
-            z-index: 2;
-        }
-        .hero-content h1 {
-            font-size: var(--text-3xl);
-            margin-bottom: var(--space-sm);
-            line-height: 1.1;
-        }
-        .hero-content p {
-            font-size: var(--text-lg);
-            color: var(--accent-light);
-            max-width: 80%;
-            margin-bottom: var(--space-md);
-        }
-        .hero-image-wrapper {
-            position: relative;
-            height: 80vh;
-            border-radius: 200px 0 0 0;
-            overflow: hidden;
-        }
-        .hero-image-wrapper::after {
-            content: '';
+        .hero-bg-layer {
             position: absolute;
             inset: 0;
-            background: linear-gradient(to right, var(--bg-dark) 0%, transparent 50%);
+            background-image: linear-gradient(to right, rgba(25, 28, 30, 0.95) 40%, rgba(25, 28, 30, 0.5) 70%, rgba(25, 28, 30, 0.9) 100%), 
+                              url('https://raw.githubusercontent.com/agelmet/ARANITOU/refs/heads/main/aran5.jpg');
+            background-size: cover;
+            background-position: center;
+            z-index: 1;
+            transform: scale(1.02);
         }
-        .hero-img {
+        .hero .container {
+            position: relative;
+            z-index: 2;
             width: 100%;
-            height: 100%;
-            object-position: center 20%;
+        }
+        .hero-content {
+            max-width: 800px;
+        }
+        .hero-content h1 {
+            font-size: var(--text-2xl);
+            margin-bottom: var(--space-sm);
+            line-height: 1.2;
+            color: var(--text-light);
+        }
+        .hero-content p {
+            font-size: var(--text-base);
+            color: var(--bg-surface);
+            max-width: 90%;
+            margin-bottom: var(--space-md);
         }
         .cta-btn {
             display: inline-block;
-            padding: 1rem 2.5rem;
+            padding: 1rem 2.2rem;
             background-color: var(--accent-primary);
             color: var(--text-light) !important;
-            font-family: var(--font-body);
+            font-size: var(--text-xs);
             font-weight: 500;
-            letter-spacing: 0.05em;
-            border-radius: 2px;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
             border: 1px solid var(--accent-primary);
-            transition: all 0.3s ease;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
         }
         .cta-btn:hover {
             background-color: transparent;
-            color: var(--accent-primary) !important;
+            border-color: var(--text-light);
         }
 
-        /* Marquee */
+        /* Typography Ribbon Marquee */
         .marquee-wrapper {
             background-color: var(--accent-primary);
             color: var(--bg-base);
-            padding: var(--space-xs) 0;
+            padding: 0.8rem 0;
             overflow: hidden;
             display: flex;
             white-space: nowrap;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         }
         .marquee {
             display: flex;
-            gap: 2rem;
-            animation: scroll 20s linear infinite;
+            gap: 3rem;
+            animation: scrollLinear 25s linear infinite;
         }
         .marquee span {
             font-family: var(--font-display);
-            font-size: var(--text-lg);
+            font-size: var(--text-sm);
             text-transform: uppercase;
-            letter-spacing: 0.1em;
+            letter-spacing: 0.08em;
             display: inline-flex;
             align-items: center;
         }
         .marquee span::after {
             content: '•';
-            margin-left: 2rem;
-            opacity: 0.5;
+            margin-left: 3rem;
+            opacity: 0.4;
         }
-        @keyframes scroll {
+        @keyframes scrollLinear {
             0% { transform: translateX(0); }
             100% { transform: translateX(-50%); }
         }
 
-        /* About Section */
+        /* Profile Layout Section */
         .about-section {
             background-color: var(--bg-base);
         }
         .about-grid {
-            grid-template-columns: 4fr 6fr;
+            grid-template-columns: 5fr 7fr;
             align-items: center;
         }
-        .about-img-box {
+        .about-img-container {
             position: relative;
-            padding-right: var(--space-sm);
-            padding-bottom: var(--space-sm);
+            width: 100%;
         }
-        .about-img-box::before {
-            content: '';
-            position: absolute;
-            right: 0;
-            bottom: 0;
-            width: 80%;
-            height: 80%;
-            background-color: var(--bg-surface);
-            z-index: 0;
-        }
-        .about-img-box img {
-            position: relative;
-            z-index: 1;
-            aspect-ratio: 3/4;
+        .about-img-container img {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 4/5;
+            object-fit: cover;
+            border-radius: 2px;
         }
         .about-content h2 {
             font-size: var(--text-2xl);
             margin-bottom: var(--space-sm);
             color: var(--text-main);
         }
-        .signature-quote {
+        .signature-callout {
             font-family: var(--font-display);
-            font-size: var(--text-xl);
+            font-size: var(--text-lg);
             font-style: italic;
             color: var(--accent-primary);
             border-left: 2px solid var(--accent-primary);
             padding-left: var(--space-xs);
-            margin: var(--space-md) 0;
+            margin: var(--space-sm) 0;
+            line-height: 1.4;
         }
 
-        /* Services */
+        /* Grid Services Section */
         .services-section {
             background-color: var(--bg-surface);
         }
         .section-header {
-            text-align: center;
-            max-width: 800px;
-            margin: 0 auto var(--space-xl);
+            max-width: 750px;
+            margin-bottom: var(--space-lg);
+        }
+        .section-header h2 {
+            font-size: var(--text-2xl);
+            margin-bottom: 0.5rem;
         }
         .services-grid {
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--space-sm);
         }
         .service-card {
             background: var(--bg-base);
             padding: var(--space-md);
-            border-top: 3px solid transparent;
-            transition: transform 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
-            position: relative;
-            overflow: hidden;
+            border-radius: 2px;
+            transition: transform 0.4s var(--ease-out-expo), box-shadow 0.4s var(--ease-out-expo);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
         .service-card:hover {
-            transform: translateY(-10px);
-            border-top-color: var(--accent-primary);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.04);
         }
         .service-card h3 {
             font-size: var(--text-lg);
-            margin-bottom: 1rem;
+            margin-bottom: 0.8rem;
             color: var(--text-main);
         }
         .service-tags {
-            font-size: 0.75rem;
+            font-size: 0.7rem;
             text-transform: uppercase;
             letter-spacing: 0.05em;
             color: var(--accent-primary);
-            margin-bottom: 1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
             display: block;
         }
 
-        /* Resilience / Military Architecture */
+        /* Frontline Resilience Structural Section */
         .resilience-section {
             background-color: var(--bg-dark);
             color: var(--text-light);
-            position: relative;
         }
-        .resilience-section h2 {
+        .resilience-grid {
+            grid-template-columns: 1fr;
+            gap: var(--space-md);
+        }
+        .resilience-header {
+            max-width: 900px;
+        }
+        .resilience-header h2 {
+            font-size: var(--text-2xl);
+            margin-bottom: var(--space-sm);
             color: var(--text-light);
+        }
+        .resilience-header p {
+            color: rgba(255, 255, 255, 0.75);
+            font-size: var(--text-base);
         }
         .pillars-grid {
             grid-template-columns: repeat(3, 1fr);
             gap: var(--space-md);
-            margin-top: var(--space-lg);
+            margin-top: var(--space-sm);
         }
-        .pillar {
-            border-left: 1px solid rgba(255,255,255,0.1);
-            padding-left: var(--space-xs);
+        .pillar-card {
+            border-top: 1px solid rgba(255,255,255,0.15);
+            padding-top: var(--space-sm);
         }
-        .pillar h4 {
+        .pillar-card h3 {
             color: var(--accent-light);
             font-size: var(--text-lg);
-            margin-bottom: 1rem;
+            margin-bottom: 0.8rem;
         }
-        .pillar p {
-            color: rgba(255,255,255,0.7);
+        .pillar-card p {
+            color: rgba(255,255,255,0.65);
             font-size: var(--text-sm);
-        }
-        
-        /* Philosophy & Library (Accordion) */
-        .library-section {
-            background-color: var(--bg-base);
-        }
-        .accordion-item {
-            border-bottom: 1px solid var(--bg-surface);
-            margin-bottom: var(--space-xs);
-        }
-        .accordion-btn {
-            width: 100%;
-            text-align: left;
-            background: none;
-            border: none;
-            padding: 1.5rem 0;
-            font-family: var(--font-display);
-            font-size: var(--text-xl);
-            color: var(--text-main);
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            transition: color 0.3s ease;
-        }
-        .accordion-btn:hover { color: var(--accent-primary); }
-        .accordion-icon {
-            font-weight: 300;
-            font-size: 2rem;
-            transition: transform 0.4s ease;
-        }
-        .accordion-btn.active .accordion-icon {
-            transform: rotate(45deg);
-            color: var(--accent-primary);
-        }
-        .accordion-content {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.6s var(--ease-out-expo);
-        }
-        .accordion-inner {
-            padding-bottom: var(--space-md);
-            font-size: var(--text-sm);
-            color: var(--text-muted);
-            columns: 1;
-        }
-        @media(min-width: 768px) {
-            .accordion-inner { columns: 2; gap: var(--space-md); }
-        }
-        .article-inline-img {
-            width: 100%;
-            margin: var(--space-sm) 0;
-            break-inside: avoid;
         }
 
-        /* Office Space Gallery & Contact */
-        .contact-section {
+        /* Global Dynamic Image Framework to Prevent Failures */
+        .editorial-image-frame {
+            width: 100%;
+            height: auto;
+            max-height: 480px;
+            object-fit: cover;
+            border-radius: 2px;
+            background-color: var(--bg-surface);
+            margin: var(--space-sm) 0;
+        }
+
+        /* Separate Content Editorial Sections */
+        .editorial-section {
+            background-color: var(--bg-base);
+            border-bottom: 1px solid var(--bg-surface);
+        }
+        .editorial-section.alt {
             background-color: var(--bg-surface);
         }
-        .contact-grid {
-            grid-template-columns: 1fr 1fr;
-        }
-        .contact-info {
-            padding: var(--space-md) var(--space-md) var(--space-md) 0;
-        }
-        .contact-info h2 { font-size: var(--text-3xl); margin-bottom: var(--space-sm); }
-        .contact-details {
-            list-style: none;
-            margin: var(--space-md) 0;
-        }
-        .contact-details li {
-            margin-bottom: 1rem;
-            font-size: var(--text-base);
-            display: flex;
+        .editorial-layout {
+            grid-template-columns: 5fr 7fr;
             align-items: flex-start;
-            gap: 10px;
         }
-        .contact-details strong { display: block; color: var(--text-main); }
-        
-        .gallery-grid {
+        .editorial-sticky-meta {
+            position: sticky;
+            top: 120px;
+        }
+        .editorial-sticky-meta h2 {
+            font-size: var(--text-2xl);
+            color: var(--text-main);
+            margin-bottom: 0.5rem;
+        }
+        .editorial-sticky-meta .tag {
+            font-size: var(--text-xs);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--accent-primary);
+            font-weight: 600;
+        }
+        .editorial-body {
+            font-size: var(--text-base);
+        }
+        .editorial-body h3 {
+            font-size: var(--text-lg);
+            margin: var(--space-sm) 0 0.5rem 0;
+            color: var(--text-main);
+        }
+        .editorial-body ul, .editorial-body ol {
+            margin-left: 1.2rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-muted);
+        }
+        .editorial-body li {
+            margin-bottom: 0.6rem;
+        }
+        .bibliography-block {
+            margin-top: var(--space-md);
+            padding-top: var(--space-xs);
+            border-top: 1px solid rgba(0,0,0,0.08);
+            font-size: var(--text-xs);
+            color: var(--text-muted);
+        }
+
+        /* Practice Environment & Space Layout */
+        .space-section {
+            background-color: var(--bg-base);
+        }
+        .space-layout-grid {
+            grid-template-columns: 4fr 8fr;
+            align-items: flex-start;
+        }
+        .space-header h2 {
+            font-size: var(--text-2xl);
+            margin-bottom: 0.5rem;
+        }
+        .space-mosaic {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 10px;
-            align-items: stretch;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 12px;
         }
-        .gallery-img {
+        .space-mosaic img {
             width: 100%;
             height: 100%;
             object-fit: cover;
+            border-radius: 2px;
             aspect-ratio: 1;
-            transition: filter 0.3s ease;
+            background-color: var(--bg-surface);
         }
-        .gallery-img:hover {
-            filter: brightness(0.9);
-        }
-        .gallery-grid img:first-child {
-            grid-column: span 2;
+        .space-mosaic img.lead-frame {
+            grid-column: span 6;
             aspect-ratio: 16/9;
+            max-height: 400px;
+        }
+        .space-mosaic img.secondary-frame {
+            grid-column: span 3;
+            aspect-ratio: 4/3;
+        }
+        .space-mosaic img.ternary-frame {
+            grid-column: span 2;
+            aspect-ratio: 1;
         }
 
-        /* Footer */
-        .footer {
-            background-color: var(--bg-dark-elevated);
-            color: rgba(255,255,255,0.5);
-            padding: var(--space-md) 0;
-            text-align: center;
-            font-size: var(--text-xs);
+        /* Clean High Contrast Interaction Form & Contact Section */
+        .contact-section {
+            background-color: var(--bg-surface);
         }
-        .footer p { margin-bottom: 0.5rem; }
+        .contact-layout {
+            grid-template-columns: 5fr 7fr;
+        }
+        .contact-details-panel h2 {
+            font-size: var(--text-2xl);
+            margin-bottom: var(--space-xs);
+        }
+        .contact-list {
+            list-style: none;
+            margin-top: var(--space-sm);
+        }
+        .contact-list li {
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+        }
+        .contact-list svg {
+            flex-shrink: 0;
+            margin-top: 4px;
+            color: var(--accent-primary);
+        }
+        .contact-item-title {
+            font-size: var(--text-xs);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-muted);
+            display: block;
+        }
+        .contact-item-value {
+            font-size: var(--text-base);
+            color: var(--text-main);
+            font-weight: 500;
+        }
+
+        /* Studio Quality Form Control */
+        .contact-form-panel {
+            background-color: var(--bg-base);
+            padding: var(--space-md);
+            border-radius: 2px;
+        }
+        .form-group {
+            margin-bottom: 1.25rem;
+        }
+        .form-group label {
+            display: block;
+            font-size: var(--text-xs);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.4rem;
+            font-weight: 500;
+        }
+        .form-control {
+            width: 100%;
+            padding: 0.85rem 1rem;
+            font-family: var(--font-body);
+            font-size: var(--text-sm);
+            background-color: var(--bg-surface);
+            border: 1px solid transparent;
+            color: var(--text-main);
+            border-radius: 2px;
+            transition: border-color 0.3s ease;
+        }
+        .form-control:focus {
+            outline: none;
+            border-color: var(--accent-primary);
+        }
+        .submit-btn {
+            width: 100%;
+            padding: 1rem;
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            border: none;
+            font-size: var(--text-xs);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .submit-btn:hover {
+            background-color: var(--accent-primary);
+        }
+
+        /* Minimal Production Footer */
+        .footer {
+            background-color: var(--bg-dark);
+            color: rgba(255, 255, 255, 0.45);
+            padding: var(--space-md) 0;
+            font-size: var(--text-xs);
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: var(--space-xs);
+        }
         .footer a {
-            color: rgba(255,255,255,0.8);
+            color: rgba(255, 255, 255, 0.7);
             text-decoration: underline;
         }
         .footer a:hover { color: #fff; }
 
-        /* Animation Classes */
+        /* Smooth Performance Optimization Animations via Reveal Classes */
         .reveal {
             opacity: 0;
-            transform: translateY(40px);
+            transform: translateY(25px);
             transition: opacity var(--transition-smooth), transform var(--transition-smooth);
         }
         .reveal.active {
             opacity: 1;
             transform: translateY(0);
         }
-        .delay-1 { transition-delay: 0.1s; }
-        .delay-2 { transition-delay: 0.2s; }
-        .delay-3 { transition-delay: 0.3s; }
+        .delay-1 { transition-delay: 0.15s; }
+        .delay-2 { transition-delay: 0.3s; }
 
-        /* Responsive adjustments */
-        @media (max-width: 992px) {
-            .hero-grid, .about-grid, .contact-grid {
+        /* Strict Structural Media Breaks */
+        @media (max-width: 1024px) {
+            .about-grid, .editorial-layout, .space-layout-grid, .contact-layout {
                 grid-template-columns: 1fr;
             }
-            .hero-content {
-                padding: var(--space-lg) 0 var(--space-sm);
-                text-align: center;
-                max-width: 100%;
+            .editorial-sticky-meta {
+                position: static;
+                margin-bottom: var(--space-xs);
             }
-            .hero-content p { max-width: 100%; }
-            .hero-image-wrapper { height: 50vh; border-radius: 0; }
-            .hero-image-wrapper::after {
-                background: linear-gradient(to top, var(--bg-dark) 0%, transparent 50%);
+            .pillars-grid {
+                grid-template-columns: 1fr;
+                gap: var(--space-sm);
             }
-            .pillars-grid { grid-template-columns: 1fr; gap: var(--space-sm); }
-            .pillar { border-left: none; border-top: 1px solid rgba(255,255,255,0.1); padding-left: 0; padding-top: var(--space-xs); }
+            .pillar-card {
+                padding-top: var(--space-xs);
+            }
+        }
+
+        @media (max-width: 768px) {
             .nav-links {
                 position: fixed;
                 top: 0; left: 0; width: 100%; height: 100vh;
@@ -611,26 +702,29 @@
                 align-items: center;
                 opacity: 0;
                 pointer-events: none;
-                transition: 0.4s ease;
+                transition: opacity 0.4s ease;
             }
             .nav-links.nav-active {
                 opacity: 1; pointer-events: auto;
             }
-            .nav-links a { font-size: var(--text-xl); color: var(--text-light) !important; }
+            .nav-links a { font-size: var(--text-lg); color: var(--text-light) !important; }
             .hamburger { display: flex; }
-            .hamburger.toggle span:nth-child(1) { transform: rotate(-45deg) translate(-5px, 5px); }
+            .hamburger.toggle span:nth-child(1) { transform: rotate(-45deg) translate(-6px, 6px); }
             .hamburger.toggle span:nth-child(2) { opacity: 0; }
-            .hamburger.toggle span:nth-child(3) { transform: rotate(45deg) translate(-5px, -5px); }
+            .hamburger.toggle span:nth-child(3) { transform: rotate(45deg) translate(-6px, -6px); }
             .navbar.scrolled .hamburger.toggle span { background-color: var(--text-light); }
+            .space-mosaic img.secondary-frame { grid-column: span 6; }
         }
     </style>
 </head>
 <body>
 
+    <!-- Loading Display Sequence -->
     <div class="loader">
         <div class="loader-logo">Ψ</div>
     </div>
 
+    <!-- Main Dynamic Navigation Bar -->
     <header class="navbar" id="navbar">
         <div class="brand-logo">
             <span class="psi">Ψ</span>
@@ -640,10 +734,12 @@
             </div>
         </div>
         <nav class="nav-links">
-            <a href="#about">Η Ψυχολογος</a>
+            <a href="#about">Βιογραφικο</a>
             <a href="#services">Υπηρεσιες</a>
-            <a href="#resilience">Προσεγγιση</a>
-            <a href="#library">Αρθρογραφια</a>
+            <a href="#resilience">Ανθεκτικοτητα</a>
+            <a href="#neuroscience">Νευροεπιστημες</a>
+            <a href="#trauma">Τραυματοθεραπεια</a>
+            <a href="#cbt-balance">Γνωσιακη & Ισορροπια</a>
             <a href="#contact">Επικοινωνια</a>
         </nav>
         <div class="hamburger">
@@ -654,19 +750,19 @@
     </header>
 
     <main>
+        <!-- Architectural Hero Layout Background Setup -->
         <section class="hero">
-            <div class="container grid hero-grid">
+            <div class="hero-bg-layer"></div>
+            <div class="container">
                 <div class="hero-content reveal">
                     <h1>Δεν είμαστε οι συνθήκες που ζούμε, αλλά ο τρόπος που επιλέγουμε να σταθούμε απέναντί τους.</h1>
-                    <p>Κλινική Ψυχολόγος • Αξιωματικός Υγειονομικού • Τραυματοθεραπεύτρια EMDR. Ένας ασφαλής, επιστημονικά τεκμηριωμένος χώρος για εφήβους και ενήλικες.</p>
-                    <a href="#contact" class="cta-btn">Κλείστε Συνεδρία</a>
-                </div>
-                <div class="hero-image-wrapper reveal delay-2">
-                    <img src="https://raw.githubusercontent.com/agelmet/ARANITOU/refs/heads/main/aranhe.jpg" alt="Κατερίνα Αρανίτου στο γραφείο της" class="hero-img" loading="eager">
+                    <p>Κλινική Ψυχολόγος (Αρ. Αδείας: 691715/2023) με εξειδίκευση στην Κλινική Ψυχική Υγεία, Συστημική Θεραπεύτρια και Πιστοποιημένη Τραυματοθεραπεύτρια EMDR. Επιστημονική προσέγγιση στην πρώτη γραμμή της ψυχικής υγείας.</p>
+                    <a href="#contact" class="cta-btn">Προγραμματισμος Συνεδριας</a>
                 </div>
             </div>
         </section>
 
+        <!-- Dynamic Continuous Motion Ribbon Marquee -->
         <div class="marquee-wrapper">
             <div class="marquee">
                 <span>Κλινικη Ψυχικη Υγεια</span>
@@ -680,251 +776,332 @@
             </div>
         </div>
 
+        <!-- Clinical Executive Biography Profile -->
         <section id="about" class="section-padding about-section">
             <div class="container grid about-grid">
-                <div class="about-img-box reveal">
-                    <img src="https://raw.githubusercontent.com/agelmet/ARANITOU/refs/heads/main/%20aranitou2.jpg" alt="Κατερίνα Αρανίτου, Κλινική Ψυχολόγος" loading="lazy">
+                <div class="about-img-container reveal">
+                    <img src="https://raw.githubusercontent.com/agelmet/ARANITOU/refs/heads/main/%20aranitou2.jpg" alt="Κατερίνα Αρανίτου Προφίλ">
                 </div>
                 <div class="about-content reveal delay-1">
                     <h2>Πολύπλευρη Κατάρτιση & Στιβαρό Υπόβαθρο</h2>
-                    <p>Η Κατερίνα Αρανίτου είναι αδειούχος Ψυχολόγος (Αρ. Αδείας: 691715/2023) με εξειδίκευση στην Κλινική Ψυχική Υγεία, η οποία διατηρεί το ιδιωτικό της γραφείο στον Χολαργό (Αετιδέων 24), ενώ παράλληλα πραγματοποιεί και εξ’ αποστάσεως συνεδρίες.</p>
-                    <p>Διαθέτει ένα στιβαρό αμερικανικό ακαδημαϊκό υπόβαθρο, έχοντας αποκτήσει το πτυχίο της στην Ανθρωποκεντρική Ψυχολογία (BSc) από το State University of New York και το Μεταπτυχιακό της δίπλωμα (MSc) στην Ψυχολογία με ειδίκευση στην Κλινική Ψυχικής Υγείας από το Hellenic American University.</p>
-                    <p>Η κλινική της ταυτότητα χαρακτηρίζεται από μια σπάνια κατάρτιση. Έχει ολοκληρώσει το 4ετές πρόγραμμα ειδίκευσης στη Συστημική Ψυχοθεραπεία στο «Εργαστήριο Διερεύνησης Ανθρωπίνων Σχέσεων», έχει εκπαιδευτεί στη Γνωσιακή Συμπεριφορική Θεραπεία (CBT) μέσω του ΕΚΠΑ, ενώ κατέχει εξειδίκευση στην Τραυματοθεραπεία EMDR (TACT Hellas).</p>
-                    <div class="signature-quote reveal delay-2">
-                        "Λόγω της μετεκπαίδευσής μου στη συστημική ψυχοθεραπεία... αποσυνδέω τη σχέση μας, τόσο από την παθολογία όσο και από την οικονομική συναλλαγή, αποκαλώντας τους ανθρώπους που έρχονται σε μένα 'θεραπευόμενους'."
+                    <p>Η Κατερίνα Αρανίτου διατηρεί το ιδιωτικό της γραφείο στον Χολάργο, ενώ παράλληλα πραγματοποιεί και εξ’ αποστάσεως (online) συνεδρίες. Διαθέτει ένα στιβαρό αμερικανικό ακαδημαϊκό υπόβαθρο, έχοντας αποκτήσει το πτυχίο της στην Ανθρωποκεντρική Ψυχολογία (BSc) από το State University of New York και το Μεταπτυχιακό της δίπλωμα (MSc) στην Ψυχολογία με ειδίκευση στην Κλινική Ψυχικής Υγείας από το Hellenic American University.</p>
+                    
+                    <div class="signature-callout">
+                        "Λόγω της μετεκπαίδευσής μου στη συστημική ψυχοθεραπεία νιώθω ότι βρίσκομαι σε προνομιακή θέση που δεν είμαι υποχρεωμένη να αναφερθώ σε εκείνους που έρχονται σε μένα για βοήθεια, ούτε ως ασθενείς (patient), ούτε ως πελάτες (client). Αποσυνδέω τη σχέση μας, τόσο από την παθολογία όσο και από την οικονομική συναλλαγή, αποκαλώντας τους θεραπευόμενους."
                     </div>
-                    <p>Είναι τακτικό μέλος του Συλλόγου Ελλήνων Ψυχολόγων (ΣΕΨ) και της American Psychological Association (APA). Το επιστημονικό της έργο έχει διακριθεί με το 1ο βραβείο παρουσίασης στο συνέδριο της American Counseling Association (EB-ACA).</p>
+                    
+                    <p>Έχει ολοκληρώσει το 4ετές πρόγραμμα ειδίκευσης στη Συστημική Ψυχοθεραπεία στο «Εργαστήριο Διερεύνησης Ανθρωπίνων Σχέσεων», έχει εκπαιδευτεί στη Γνωσιακή Συμπεριφορική Θεραπεία (CBT) μέσω του Κ.Ε.ΔΙ.ΒΙ.Μ. του Εθνικού και Καποδιστριακού Πανεπιστημίου Αθηνών (ΕΚΠΑ), ενώ κατέχει εξειδίκευση στην Τραυματοθεραπεία EMDR (TACT Hellas).</p>
+                    <p>Είναι τακτικό μέλος του Συλλόγου Ελλήνων Ψυχολόγων (ΣΕΨ) και της American Psychological Association (APA). Η επιστημονική της επάρκεια έχει αναγνωριστεί διεθνώς, αποσπώντας το 1ο βραβείο παρουσίασης στο συνέδριο της American Counseling Association (EB-ACA).</p>
                 </div>
             </div>
         </section>
 
+        <!-- Core Optimised Service Directory -->
         <section id="services" class="section-padding services-section">
             <div class="container">
                 <div class="section-header reveal">
-                    <h2>Πεδία Εξειδίκευσης</h2>
-                    <p>Ολοκληρωμένες και βελτιστοποιημένες υπηρεσίες ψυχικής υγείας για την αντιμετώπιση σύγχρονων προκλήσεων.</p>
+                    <h2>Υπηρεσίες & Κλινική Εξειδίκευση</h2>
+                    <p>Δομημένοι άξονες θεραπευτικής υποστήριξης προσαρμοσμένοι στις ανάγκες ενηλίκων, εφήβων και σύγχρονων οργανισμών.</p>
                 </div>
                 <div class="grid services-grid">
                     
+                    <div class="service-card reveal">
+                        <div>
+                            <span class="service-tags">Μέθοδος EMDR</span>
+                            <h3>Διαχείριση Τραύματος & Μετατραυματικού Στρες</h3>
+                            <p>Αξιοποιώντας την εξειδίκευσή της στην Τραυματοθεραπεία EMDR, η ψυχολόγος εφαρμόζει τη μέθοδο της διμερούς διέγερσης για να βοηθήσει τον εγκέφαλο να επεξεργαστεί και να «αρχειοθετήσει» ομαλά τις οδυνηρές μνήμες. Το τραύμα παύει να προκαλεί συναισθηματικό πανικό και μετατρέπεται σε ένα γεγονός που ανήκει οριστικά στο παρελθόν.</p>
+                        </div>
+                    </div>
+
                     <div class="service-card reveal delay-1">
-                        <span class="service-tags">Μέθοδος EMDR • Τραυματοθεραπεία</span>
-                        <h3>Διαχείριση Τραύματος & Μετατραυματικού Στρες</h3>
-                        <p>Κάποια βιώματα χαράσσονται βαθιά μέσα μας, επηρεάζοντας τον τρόπο που αναπνέουμε και αντιδρούμε στο παρόν. Αξιοποιώντας την εξειδίκευσή της στην Τραυματοθεραπεία EMDR, η ψυχολόγος εφαρμόζει τη μέθοδο της διμερούς διέγερσης για να βοηθήσει τον εγκέφαλο να επεξεργαστεί και να «αρχειοθετήσει» ομαλά τις οδυνηρές μνήμες. Το τραύμα παύει να προκαλεί συναισθηματικό πανικό.</p>
+                        <div>
+                            <span class="service-tags">Burnout & Resilience</span>
+                            <h3>Εταιρική Ευεξία & Διαχείριση Εργασιακού Άγχους</h3>
+                            <p>Βασισμένη στην πλούσια εμπειρία της στη διαχείριση ανθρώπινου δυναμικού (Human Resources) και στις γνωσιακές επιστήμες, η ψυχολόγος εφαρμόζει στοχευμένες παρεμβάσεις για εργαζόμενους και στελέχη. Μαθαίνετε να θέτετε υγιή όρια, να διαχειρίζεστε το εργασιακό στρες και να προσαρμόζεστε αποτελεσματικά στις απαιτήσεις.</p>
+                        </div>
                     </div>
 
                     <div class="service-card reveal delay-2">
-                        <span class="service-tags">Διαχείριση Άγχους • Ανθεκτικότητα</span>
-                        <h3>Εταιρική Ευεξία & Διαχείριση Εργασιακού Άγχους</h3>
-                        <p>Το σύγχρονο επαγγελματικό περιβάλλον απαιτεί τεράστια αποθέματα ενέργειας, οδηγώντας συχνά σε burnout. Βασισμένη στην πλούσια εμπειρία της στη διαχείριση ανθρώπινου δυναμικού και στις γνωσιακές επιστήμες, εφαρμόζει στοχευμένες παρεμβάσεις για εργαζόμενους και στελέχη. Μαθαίνετε να θέτετε υγιή όρια και να προσαρμόζεστε στις υψηλές απαιτήσεις.</p>
+                        <div>
+                            <span class="service-tags">Συνθετικό Μοντέλο</span>
+                            <h3>Συστημική & Γνωσιακή Ατομική Θεραπεία Ενηλίκων</h3>
+                            <p>Όταν η κατάθλιψη, οι κρίσεις πανικού, οι φοβίες ή οι έντονες διακυμάνσεις της διάθεσης σαμποτάρουν την καθημερινότητά σας, το Συνθετικό - Συστημικό μοντέλο προσφέρει μια διέξοδο. Συνδυάζουμε τη δομή της CBT για άμεση αλλαγή των δυσλειτουργικών σκέψεων με το βάθος της Συστημικής προσέγγισης.</p>
+                        </div>
                     </div>
 
-                    <div class="service-card reveal delay-3">
-                        <span class="service-tags">Ατομικές Συνεδρίες • CBT & Συστημική</span>
-                        <h3>Συστημική & Γνωσιακή Ατομική Θεραπεία Ενηλίκων</h3>
-                        <p>Όταν η κατάθλιψη, οι κρίσεις πανικού ή οι φοβίες σαμποτάρουν την καθημερινότητά σας, το Συνθετικό-Συστημικό μοντέλο προσφέρει διέξοδο. Συνδυάζοντας τη δομή της CBT για άμεση αλλαγή δυσλειτουργικών σκέψεων, με το βάθος της Συστημικής προσέγγισης, χτίζουμε μια σταθερή καθημερινότητα, γεμάτη αυτογνωσία και ισορροπία.</p>
-                    </div>
-
-                    <div class="service-card reveal delay-1">
-                        <span class="service-tags">Ομάδες Πρόληψης • Οικογενειακή Προσέγγιση</span>
-                        <h3>Συμβουλευτική Εφήβων (15+) & Υποστήριξη Οικογένειας</h3>
-                        <p>Έχοντας σημαντική κλινική εμπειρία στην καθοδήγηση ομάδων πρόληψης εφήβων, η θεραπεύτρια προσφέρει ένα ασφαλές καταφύγιο για νέους. Σε περιβάλλον απόλυτης εχεμύθειας, οι έφηβοι υποστηρίζονται στη διαχείριση του σχολικού άγχους και των ζητημάτων ταυτότητας. Παράλληλα, παρέχεται συμβουλευτική για ολόκληρο το οικογενειακό σύστημα.</p>
+                    <div class="service-card reveal">
+                        <div>
+                            <span class="service-tags">Έφηβοι 15+</span>
+                            <h3>Συμβουλευτική Εφήβων & Υποστήριξη Οικογένειας</h3>
+                            <p>Σε ένα περιβάλλον απόλυτης εχεμύθειας, οι έφηβοι υποστηρίζονται στη διαχείριση του σχολικού άγχους και των ζητημάτων ταυτότητας. Παράλληλα, παρέχεται συμβουλευτική για ολόκληρο το οικογενειακό σύστημα, αναλύοντας τις δυναμικές αλληλεπιδράσεις του περιβάλλοντος.</p>
+                        </div>
                     </div>
 
                 </div>
             </div>
         </section>
 
+        <!-- Command Frontline Tactical Resilience Section -->
         <section id="resilience" class="section-padding resilience-section">
-            <div class="container">
-                <div class="section-header reveal" style="text-align: left; max-width: 900px; margin: 0;">
-                    <h2>Η Αρχιτεκτονική της Ψυχικής Ανθεκτικότητας:<br>Μαθήματα από την Πρώτη Γραμμή</h2>
-                    <p style="color: rgba(255,255,255,0.8); margin-top: 1rem;">
-                        Στην ψυχοθεραπεία, η λέξη «Ανθεκτικότητα» (Resilience) χρησιμοποιείται συχνά σαν αφηρημένη υπόσχεση. Για μένα, δεν είναι θεωρία. Είναι εφαρμοσμένη επιστήμη. Η επαγγελματική μου διαδρομή είναι άρρηκτα συνδεδεμένη με τον χώρο των Ενόπλων Δυνάμεων.
-                    </p>
-                    <p style="color: rgba(255,255,255,0.8);">
-                        Υπηρετώ ως Αξιωματικός και Ψυχολόγος στο 414 Στρατιωτικό Νοσοκομείο Ειδικών Νοσημάτων, έχοντας διατελέσει Επιτελής Αξιωματικός στη Διεύθυνση Υγειονομικού του ΓΕΕΘΑ. Η κλινική μου θητεία με έφερε αντιμέτωπη με το πιο απαιτητικό, οριακό περιβάλλον. Εκεί, η ικανότητα να αντέχεις και να ανασυντάσσεσαι δεν είναι πολυτέλεια — είναι ζήτημα επιβίωσης.
-                    </p>
+            <div class="container grid resilience-grid">
+                <div class="resilience-header reveal">
+                    <h2>Η Αρχιτεκτονική της Ψυχικής Ανθεκτικότητας: Μαθήματα από την Πρώτη Γραμμή</h2>
+                    <p>Στην ψυχοθεραπεία, η λέξη «Ανθεκτικότητα» (Resilience) χρησιμοποιείται πολύ συχνά, σχεδόν σαν μια αφηρημένη υπόσχεση. Για μένα, ωστόσο, η ψυχική ανθεκτικότητα δεν είναι μια θεωρία γραμμένη σε κάποιο βιβλίο· είναι μια εφαρμοσμένη επιστήμη, την οποία μελετώ και υπηρετώ καθημερινά, επί σειρά ετών, στην πρώτη γραμμή της ψυχικής υγείας.</p>
+                    <p style="margin-top: 1rem;">Η πορεία μου ως Αξιωματικός και Ψυχολόγος στις Ένοπλες Δυνάμεις, καθώς και η κλινική μου θητεία στη Ψυχιατρική Κλινική του 414 ΣΝΕΝ, με έφεραν αντιμέτωπη με το πιο απαιτητικό, οριακό και πιεστικό ανθρώπινο περιβάλλον. Εκεί, η ικανότητα ενός ανθρώπου να αντέχει, να προσαρμόζεται και να ανασυντάσσεσαι απέναντι στην κρίση, δεν είναι πολυτέλεια — είναι ζήτημα επιβίωσης. Αυτή ακριβώς τη δομημένη προσέγγιση μεταφέρω και στο θεραπευτικό μου δωμάτιο:</p>
                 </div>
-
-                <div class="grid pillars-grid reveal delay-2">
-                    <div class="pillar">
-                        <h4>Μια Σχέση Απόλυτης Σταθερότητας</h4>
-                        <p>Στο γραφείο μου θα βρείτε ένα πλαίσιο απόλυτης πειθαρχίας και ασφάλειας. Η στρατιωτική μου θητεία με έχει διδάξει να διατηρώ την ψυχραιμία μου και να στέκομαι ως ακλόνητο στήριγμα δίπλα στον θεραπευόμενο, όσο βαρύ κι αν είναι το συναισθηματικό φορτίο.</p>
-                    </div>
-                    <div class="pillar">
-                        <h4>Η Συστημική Χαρτογράφηση</h4>
-                        <p>Κανένας άνθρωπος δεν λυγίζει σε κενό. Το άγχος ή οι κρίσεις πανικού συνδέονται με τα «συστήματα» στα οποία ανήκετε: οικογένεια, εργασία, κοινωνία. Η δουλειά μας είναι να χαρτογραφήσουμε αυτές τις πιέσεις και να βρούμε πού κρύβονται οι δικές σας αόρατες δυνάμεις.</p>
-                    </div>
-                    <div class="pillar">
-                        <h4>Επιστήμη & Ηθική Πρωτοπορία</h4>
-                        <p>Η διαρκής ερευνητική μου δραστηριότητα και η ενασχόλησή μου με την ενσωμάτωση της Τεχνητής Νοημοσύνης (ΑΙ) στην Ψυχική Υγεία, αποτελούν εγγύηση: οι μέθοδοι που εφαρμόζουμε είναι απόλυτα σύγχρονες, ηθικά άρτιες και επιστημονικά τεκμηριωμένες.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="library" class="section-padding library-section">
-            <div class="container">
-                <div class="section-header reveal">
-                    <h2>Ψυχοεκπαίδευση & Αρθρογραφία</h2>
-                    <p>Η γνώση είναι το πρώτο βήμα για την αλλαγή. Εξερευνήστε τις θεραπευτικές προσεγγίσεις, τις νευροεπιστήμες και τη φιλοσοφία πίσω από το κλινικό έργο.</p>
-                </div>
-
-                <div class="accordion reveal delay-1">
-                    
-                    <div class="accordion-item">
-                        <button class="accordion-btn">
-                            Το Ψυχικό Τραύμα & Η Μέθοδος EMDR
-                            <span class="accordion-icon">+</span>
-                        </button>
-                        <div class="accordion-content">
-                            <div class="accordion-inner">
-                                <p>Η βία σε κάθε μορφή της, είτε λεκτική, είτε σωματική, ή ψυχολογική προκαλεί τραύματα σωματικά και ψυχικά. Δεν χρειάζεται να είναι κάποιος στρατιώτης στον πόλεμο... Για πολλούς ανθρώπους ο πόλεμος ξεκινάει από το σπίτι τους.</p>
-                                <p>Ψυχικό τραύμα αφορά άτομα που έχουν υπάρξει θύματα κακοποίησης, μάρτυρες βίας, ή έχουν υποστεί οικονομικό αποκλεισμό, τροχαία, ή σοβαρές ασθένειες.</p>
-                                <img src="https://raw.githubusercontent.com/agelmet/ARANITOU/refs/heads/main/emdr1.png" class="article-inline-img" alt="Διαδικασία EMDR" loading="lazy">
-                                <p>Από το αρχαιοελληνικό ρήμα «τιτρώσκω» (πληγώνω) προέρχεται η λέξη «τραύμα». Ο ψυχικός τραυματισμός εκδηλώνεται όταν ένα στρεσογόνο γεγονός προκαλέσει «ρήγμα» στον ψυχισμό. Οι ενοχλητικές αναμνήσεις παραμένουν κλειδωμένες στο νευρικό σύστημα.</p>
-                                <p><strong>Τι είναι η θεραπεία EMDR;</strong> Είναι μια βραχύχρονη θεραπεία (Adaptive Information Processing) που χρησιμοποιεί αμφίπλευρη διέγερση (BLS) - οπτική, ακουστική ή απτική (όπως η "αγκαλιά πεταλούδας") - για να βοηθήσει τον εγκέφαλο να επεξεργαστεί τραυματικές αναμνήσεις αξιοποιώντας το φυσικό σύστημα αυτοΐασης.</p>
-                                <img src="https://raw.githubusercontent.com/agelmet/ARANITOU/refs/heads/main/emdr2.png" class="article-inline-img" alt="Bilateral Stimulation" loading="lazy">
-                                <p>Στη διαδικασία της ψυχοθεραπείας, προσπαθούμε να επανενσωματώσουμε τα αποσυνδεδεμένα νευρωνικά δίκτυα, επιτρέποντας στον συνειδητό φλοιό να ελέγξει τις παρελθούσες αναμνήσεις.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <button class="accordion-btn">
-                            Νευροεπιστήμες & Ο Κοινωνικός Εγκέφαλος
-                            <span class="accordion-icon">+</span>
-                        </button>
-                        <div class="accordion-content">
-                            <div class="accordion-inner">
-                                <p>Γνωρίζουμε, σύμφωνα με τις νευροεπιστήμες, πως ο εγκέφαλος εξαρτάται από τις αλληλεπιδράσεις με άλλους. Οι φιλίες, ο γάμος, η ψυχοθεραπεία μπορούν να αλλάξουν τις δομές και τη βιοχημεία του εγκεφάλου μέσω της νευροπλαστικότητας.</p>
-                                <img src="https://raw.githubusercontent.com/agelmet/ARANITOU/refs/heads/main/mind.png" class="article-inline-img" alt="Απεικόνιση Εγκεφάλου" loading="lazy">
-                                <p>Ο εγκέφαλος είναι ένα κοινωνικό όργανο. Χωρίς αμοιβαία διεγερτικές αλληλεπιδράσεις, οι νευρώνες (και οι άνθρωποι) μαραίνονται. Οι πρώιμες αρνητικές διαπροσωπικές εμπειρίες γίνονται η κύρια πηγή συμπτωμάτων.</p>
-                                <img src="https://raw.githubusercontent.com/agelmet/ARANITOU/refs/heads/main/article1.png" class="article-inline-img" alt="Νευρωνικά Δίκτυα" loading="lazy">
-                                <p>Ο Doidge αναφέρει ότι ένας αποτελεσματικός ψυχοθεραπευτής είναι ένας "μικροχειρουργός του νου". Η ψυχοθεραπεία προάγει την εγκεφαλική απαρτίωση (brain integration): οριζόντια (λογική αριστερού με συναίσθημα δεξιού ημισφαιρίου) και κάθετη (ανώτερες εκτελεστικές λειτουργίες με ενστικτώδεις αντιδράσεις).</p>
-                                <img src="https://raw.githubusercontent.com/agelmet/ARANITOU/refs/heads/main/articl2.png" class="article-inline-img" alt="Νευροπλαστικότητα" loading="lazy">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <button class="accordion-btn">
-                            Οικογενειακή - Συστημική Θεραπεία
-                            <span class="accordion-icon">+</span>
-                        </button>
-                        <div class="accordion-content">
-                            <div class="accordion-inner">
-                                <p>Η συστημική θεραπεία διαφοροποιείται από τις ατομοκεντρικές προσεγγίσεις αναδεικνύοντας τη σημασία των σχέσεων. Δίνει έμφαση στη δυναμική των σχέσεων: τα προβλήματα ενός ατόμου είναι προϊόν αλληλεπιδράσεων με το ευρύτερο πλαίσιο.</p>
-                                <p>Για παράδειγμα, μια προβληματική συμπεριφορά ενός μέλους έχει συχνά «χρησιμότητα» για τη λειτουργία της οικογένειας. Αν τη δούμε μέσα στο οικογενειακό σύστημα, τότε θα δούμε ότι μπορεί να είναι "λειτουργική" με στρεβλό τρόπο.</p>
-                                <p>Σύμφωνα με την κυκλική οπτική της συστημικής θεωρίας, καταργείται η απλή αιτία-αποτέλεσμα. "Το Α επηρεάζει το Β αλλά και το Β επηρεάζει το Α". Όλα τα ζωντανά συστήματα είναι βιοψυχοκοινωνικά και αντιμετωπίζονται με ολιστική προσέγγιση.</p>
-                                <p>Στη ψυχοθεραπεία συνοδεύουμε τον θεραπευόμενο να πει την ιστορία του, μέχρι να βρει τη λύση που ήδη έχει μέσα του. Δεν πάει στη θεραπεία για "συμμόρφωση", αλλά για να ακουστεί και να αλλάξει μόνος του, εφόσον το επιθυμεί.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <button class="accordion-btn">
-                            CBT, Εργασία, Αγάπη & Παιχνίδι
-                            <span class="accordion-icon">+</span>
-                        </button>
-                        <div class="accordion-content">
-                            <div class="accordion-inner">
-                                <h3>Γνωσιακή Συμπεριφοριστική Θεραπεία (CBT)</h3>
-                                <p>Η βασική ιδέα της CBT είναι ότι η εσωτερική νοητική κατασκευή ασκεί επιρροή στη σκέψη, συναίσθημα και συμπεριφορά. Όπως έλεγε ο Επίκτητος: «ταράσσει τους ανθρώπους ου τα πράγματα, αλλά τα περί των πραγμάτων δόγματα». Δεν είναι η κατάσταση αυτή καθαυτή, αλλά το νόημα που της αποδίδουμε. Στόχος είναι η τροποποίηση του μοτίβου σκέψης.</p>
-                                
-                                <h3 style="margin-top:2rem;">Work, Love and Play</h3>
-                                <p>Στο κλασικό δίδυμο του Φρόιντ (εργασία και αγάπη), προσθέτουμε το παιχνίδι. Αυτοί οι τρεις τομείς είναι όπου εκφράζουμε ποιοι είμαστε.</p>
-                                <img src="https://raw.githubusercontent.com/agelmet/ARANITOU/refs/heads/main/eswter1.png" class="article-inline-img" alt="Work Love Play Balance" loading="lazy">
-                                <p>Η εργασία συνεπάγεται παραγωγική προσπάθεια. Η αγάπη περιλαμβάνει τις συνδέσεις. Το παιχνίδι περιλαμβάνει χαλάρωση και επαναφόρτιση. Η επιδίωξη μόνο ενός τομέα οδηγεί σε δυσαρέσκεια. Η ενσωμάτωση και των τριών φέρνει μια ζωή γεμάτη επιτεύγματα και ηρεμία.</p>
-                                <img src="https://raw.githubusercontent.com/agelmet/ARANITOU/refs/heads/main/eswter2.png" class="article-inline-img" alt="Ισορροπία" loading="lazy">
-                                <p>Ένας «φροντισμένος» εαυτός θα φροντίσει να κάνει υγιείς σχέσεις. Αν δυσκολευόμαστε, καλό είναι να ζητάμε βοήθεια.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="section-padding contact-section">
-            <div class="container grid contact-grid">
                 
-                <div class="contact-info reveal">
-                    <h2>Επικοινωνία & Ιατρείο</h2>
-                    <p>Όταν νιώσετε έτοιμοι να αφήσετε πίσω το βάρος της πίεσης και να χτίσετε τη δική σας ψυχική πανοπλία, είμαι εδώ για να βαδίσουμε μαζί, βήμα-βήμα, σε αυτή τη διαδρομή.</p>
+                <div class="grid pillars-grid reveal delay-1">
+                    <div class="pillar-card">
+                        <h3>Σχέση Απόλυτης Σταθερότητας</h3>
+                        <p>Στο γραφείο μου (ή στην online οθόνη μας) θα βρείτε ένα πλαίσιο απόλυτης πειθαρχίας, συνέπειας και ασφάλειας. Η στρατιωτική μου θητεία με έχει διδάξει να διατηρώ την ψυχραιμία μου και να στέκομαι ως ακλόνητο στήριγμα δίπλα στον θεραπευόμενο, όσο βαρύ κι αν είναι το συναισθηματικό φορτίο.</p>
+                    </div>
+                    <div class="pillar-card">
+                        <h3>Συστημική Χαρτογράφηση</h3>
+                        <p>Με βάση την τετραετή μου εκπαίδευση στη Συστημική Θεραπεία, ξέρω ότι κανένας άνθρωπος δεν λυγίζει σε κενό. Το άγχος της εργασίας σας, οι κρίσεις πανικού ή η θλίψη σας συνδέονται άμεσα με τα «συστήματα» στα οποία ανήκετε: την οικογένεια, το επαγγελματικό περιβάλλον. Χαρτογραφούμε αυτές τις πιέσεις.</p>
+                    </div>
+                    <div class="pillar-card">
+                        <h3>Επιστήμη & Ηθική Πρωτοπορία</h3>
+                        <p>Η διαρκής ερευνητική μου δραστηριότητα σε διεθνή συνέδρια της American Counseling Association και η ενασχόλησή μου με την ενσωμάτωση της Τεχνητής Νοημοσύνης (ΑΙ) στην Ψυχική Υγεία, αποτελούν για εσάς την ισχυρότερη εγγύηση: οι μέθοδοι που εφαρμόζουμε είναι επιστημονικά τεκμηριωμένες.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- New Editorial Section 1: Neuroscience -->
+        <section id="neuroscience" class="section-padding editorial-section">
+            <div class="container grid editorial-layout">
+                <div class="editorial-sticky-meta reveal">
+                    <span class="tag">Επιστημονικό Δοκίμιο 01</span>
+                    <h2>Νευροεπιστήμες & Ο Κοινωνικός Εγκέφαλος</h2>
+                </div>
+                <div class="editorial-body reveal delay-1">
+                    <p>Γνωρίζουμε, σύμφωνα με τις νευροεπιστήμες, όπως κάθε ζωντανό σύστημα - από τους μεμονωμένους νευρώνες έως τα σύνθετα οικοσυστήματα - ο εγκέφαλος εξαρτάται από τις αλληλεπιδράσεις με άλλους για την επιβίωσή του και αποτελούν την πρωταρχική πηγή ρύθμισης, ανάπτυξης και υγείας του.</p>
+                    <p>Καθε εγκέφαλος εξαρτάται από την υποστήριξη των φροντιστών και των αγαπημένων προσώπων για την ανάπτυξη και την ευημερία του. Οι φιλίες, ο γάμος, η ψυχοθεραπεία - στην πραγματικότητα, οποιαδήποτε ουσιαστική σχέση - μπορούν να επανενεργοποιήσουν τις νευροπλαστικές διεργασίες και να αλλάξουν τις δομές και τη βιοχημεία του εγκεφάλου.</p>
                     
-                    <ul class="contact-details">
+                    <img src="https://raw.githubusercontent.com/agelmet/ARANITOU/refs/heads/main/article1.png" alt="Νευρωνικές Αλληλεπιδράσεις" class="editorial-image-frame">
+                    
+                    <p>Ξεκινάμε λοιπόν με αυτό που γνωρίζουμε: Ο εγκέφαλος είναι ένα κοινωνικό όργανο προσαρμογής που χτίζεται μέσω αλληλεπιδράσεων με άλλους και ότι μεμονωμένοι νευρώνες ή μεμονωμένοι ανθρώπινοι εγκέφαλοι δεν υπάρχουν στη φύση. Χωρίς αμοιβαία διεγερτικές αλληλεπιδράσεις, οι άνθρωποι και οι νευρώνες μαραίνονται και πεθαίνουν.</p>
+                    <p>Στους νευρώνες αυτή η διαδικασία ονομάζεται απόπτωση, στους ανθρώπους ονομάζεται κατάθλιψη, θλίψη και αυτοκτονία. Από τη γέννηση μέχρι τον θάνατο, ο καθένας από εμάς χρειάζεται άλλους που μας αναζητούν, δείχνουν ενδιαφέρον να ανακαλύψουν ποιοι είμαστε και μας βοηθούν να νιώθουμε ασφαλείς.</p>
+                    <p>Το γεγονός ότι ο εγκέφαλος είναι ένα τόσο εξειδικευμένο κοινωνικό όργανο προσαρμογής είναι ταυτόχροκα καλά και κακά νέα. Τα καλά νέα είναι ότι, εάν προκύψουν απροσδόκητες προκλήσεις, οι εγκέφαλοί μας έχουν μεγαλύτερες πιθανότητες να «προσαρμοστούν και να επιβιώσουν». Για παράδειγμα, όταν η καλή γονική μέριμνα και φροντίδα συνδυάζεται με αρκετά καλό γενετικό υλικό, οι εγκέφαλοί μας διαμορφώνονται με τρόπους που μας ωφελούν σε όλη μας τη ζωή.</p>
+                    <p>Και τα κακά νέα; Είμαστε εξίσου ικανοί να «προσαρμοστούμε σε ανθυγιεινά περιβάλλοντα και παθολογικούς φροντιστές». Οι προσαρμογές που προκύπτουν μπορεί βέβαια να μας βοηθήσουν να «επιβιώσουν από μια τραυματική παιδική ηλικία, αλλά εμποδίζουν την υγιή ανάπτυξη αργότερα στη ζωή.</p>
+                    
+                    <img src="https://raw.githubusercontent.com/agelmet/ARANITOU/refs/heads/main/articl2.png" alt="Νευροπλαστικότητα και Ανάπτυξη" class="editorial-image-frame">
+                    
+                    <p>Επειδή λοιπόν, τα πρώτα χρόνια της ζωής είναι μια περίοδος έντονης ανάπτυξης του εγκεφάλου, οι πρώιμες αρνητικές διαπροσωπικές εμπειρίες γίνονται η κύρια πηγή των συμπτωμάτων, για τα οποία οι άνθρωποι αναζητούν ανακούφιση στην ψυχοθεραπεία. Οι πρώιμες εμπειρίες καθορίζουν τη μοριακή δομή του εγκεφάλου του ενήλικα. Υπάρχουν στη ζωή ενός ανθρώπου κρίσιμες περίοδοι μεγίστης ευπλαστότητας στον εγκέφαλο, η ενδομήτριος ζωή, τα πρώτα χρόνια ζωής, με έμφαση τον πρώτο χρόνο και η εφηβεία.</p>
+                    <p>Τα πρώτα στάδια ανάπτυξης των ανθρώπων είναι ζωτικής σημασίας, διότι εμπεριέχουν την αναπαράσταση των μελλοντικών μας δυνατοτήτων. Το περιβάλλον που μεγαλώνει ένα βρέφος μπορεί να διευκολύνει ή να παρεμποδίσει την ανάπτυξη του.</p>
+                    <p>Ο Doidge (2007) συμφωνεί αναφέροντας, ότι ένας αποτελεσματικός ψυχοθεραπευτής είναι ένας μικροχειρουργός του νου, που βοηθάει τους θεραπευόμενους να κάνουν τις αναγκαίες αλλαγές στα νευρωνικά τους κυκλώματα. Οι αλλαγές που εμφανίζονται στο επίπεδο του νου μέσω μιας αποτελεσματικής ψυχοθεραπευτικής παρέμβασης συνοδεύονται από αλλαγές στη ροή του αίματος στον εγκέφαλο και στην κανονικοποίηση των δυσλειτουργικών νευρωνικών δικτύων του θεραπευόμενου.</p>
+                    <p>Σύμφωνα με τον Cozolino (2010), όλες οι μορφές θεραπείας, ανεξαρτήτως θεωρητικού προσανατολισμού, για παράδειγμα την ψυχανάλυση, την γνωσιακή συμπεριφοριστική θεραπεία, συστημική ψυχοθεραπεία, Gestalt, συνθετική ψυχοθεραπεία, κλπ., θα είναι επιτυχείς στο βαθμό που προάγουν τη νευρωνική απαρτίωση. Σύμφωνα με τον Siegel (1999), η ψυχοθεραπεία προάγει την εγκεφαλική απαρτίωση (brain integration) προσφέροντας εμπειρίες που δημιουργούν συνδέσεις μεταξύ διαφορετικών τμημάτων του εγκεφάλου.</p>
+                    <p>Η κατεύθυνση της εγκεφαλικής απαρτίωσης είναι διπλή: α) οριζόντια απαρτίωση, ώστε η λογική του αριστερού εγκεφάλου να μπορεί να συνεργαστεί αποτελεσματικά με το συναίσθημα του δεξιού και β) κάθετη απαρτίωση, ώστε τα ανώτερα μέρη του εγκεφάλου που διεξάγουν τις ανώτερες εκτελεστικές, νοητικές λειτουργίες (π.χ. σκέψη, φαντασία, σχεδιασμός) να συνεργάζονται αποτελεσματικά με τα χαμηλότερα μέρη, που έχουν να κάνουν περισσότερο με τις ενστικτώδεις αντιδράσεις και την επιβίωση μας (Siegel, 2020).</p>
+                    <p>Για να γράψουμε λοιπόν την ιστορία αυτού του ταξιδιού, δηλαδή του ταξιδιού της ψυχοθεραπείας, πρέπει να ξεκινήσουμε τον οδηγό μας με την κατανόηση, ότι δεν υπάρχουν μόνο ανθρώπινοι εγκέφαλοι, αλλά οι εγκέφαλοι υπάρχουν μόνο μέσα σε δίκτυα άλλων εγκεφάλων.</p>
+                    
+                    <div class="bibliography-block">
+                        <strong>ΒΙΒΛΙΟΓΡΑΦΙΑ:</strong><br>
+                        • Cozolino, L. (2010). The neuroscience of psychotherapy: Healing the social brain (2nd ed.). New York, NY: Norton.<br>
+                        • Doidge, N. (2007). The brain that changes itself: Stories of personal triumph from the frontiers of brain science. New York: Viking.<br>
+                        • Siegel, D. J. (2020). The developing mind: How relationships and the brain interact to shape who we are. Guilford Publications.<br>
+                        • Siegel, D.J. (1999). The developing mind: Toward a neurobiology of interpersonal experience. New York: Guilford.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- New Editorial Section 2: Trauma & EMDR -->
+        <section id="trauma" class="section-padding editorial-section alt">
+            <div class="container grid editorial-layout">
+                <div class="editorial-sticky-meta reveal">
+                    <span class="tag">Επιστημονικό Δοκίμιο 02</span>
+                    <h2>Ψυχικό Τραύμα & Θεραπεία EMDR</h2>
+                </div>
+                <div class="editorial-body reveal delay-1">
+                    <p>Η βία σε κάθε μορφή της, είτε λεκτική, είτε σωματική, ή ψυχολογική προκαλεί τραύματα σωματικά και ψυχικά. Δεν χρειάζεται να είναι κάποιος στρατιώτης στον πόλεμο, ο οποίος όταν επαναπατρίζεται, έχει εκρήξεις θυμού ή απουσία συναισθήματος, λόγω ψυχικού τραύματος. Για πολλούς ανθρώπους ο πόλεμος ξεκινάει από το σπίτι τους.</p>
+                    <p>Ψυχικό τραύμα αφορά, για παράδειγμα, άτομα που έχουν υπάρξει θύματα σεξουαλικής κακοποίησης στην παιδική τους ηλικία, είτε είχαν γίνει μάρτυρες ξυλοδαρμού του γονέα τους, είτε έχουν υποστεί σωματική ή λεκτική βία από τον/την σύντροφό τους ή ακόμα και τον οικονομικό και επαγγελματικό αποκλεισμό. Άτομα που είχαν τροχαίο ατύχημα ή έχουν διαγνωστεί με κάποια σοβαρή ασθένεια, αντιμετώπισαν τρομοκρατική ενέργεια ή φυσική καταστροφή.</p>
+                    
+                    <img src="https://raw.githubusercontent.com/agelmet/ARANITOU/refs/heads/main/emdr1.png" alt="Αποτύπωση Τραύματος" class="editorial-image-frame">
+                    
+                    <p>Από το αρχαιοελληνικό ρήμα «τιτρώσκω» που σημαίνει «πληγώνω» προέρχεται η λέξη «τραύμα», η οποία χρησιμοποιήθηκε στους στρατιώτες που είχαν υποστεί πληγές ή τραυματισμό που προκλήθηκαν από τη διάτρηση του θώρακος. Η ιατρική έννοια του τραύματος είναι «η ξαφνική ή βίαιη λύση της συνέχειας των ιστών του δέρματος και συνήθως αιμορραγία» (Μπαμπινιώτης, 2008).</p>
+                    <p>Ο ψυχικός τραυματισμός εκδηλώνεται όταν κάποιο στρεσογόνο γεγονός βιωθεί και προκαλέσει «ρήγμα» στο ψυχισμό ενός ατόμου. Δηλαδή το άτομο όσες ικανότητες και άμυνες επιστρατεύσει δεν επαρκούν για να το ξεπεράσει. Ο τραυματισμός εγγράφεται ανεξίτηλα στην μνήμη, καθώς και στο σώμα χωρίς να είναι σε θέση το άτομο να μπορεί να το εξαλείψει. Με αποτέλεσμα ενοχλητικές αναμνήσεις μπορούν να αποθηκευτούν στον εγκέφαλο μεμονωμένα και παραμένουν κλειδωμένα στο νευρικό σύστημα με τις αρχικές εικόνες, τους ήχους, τις σκέψεις και τα συναισθήματα που εμπλέκονται.</p>
+                    <p>Όλοι οι άνθρωποι διαθέτουμε ένα φυσικό σύστημα «αυτοϊασης» που έχει εξελιχθεί και μας επιτρέπει να επανορθώνουμε τις αντιδράσεις μας σε ενοχλητικά γεγονότα από μια αρχική δυσλειτουργική κατάσταση ανισορροπίας σε μια προσαρμοστική κατάσταση επίλυσης. Υπό κανονικές συνθήκες, το μυαλό έχει τη φυσική ικανότητα να επεξεργάζεται ενοχλητικές στρεσογόνες εμπειρίες χωρίς θεραπευτική παρέμβαση, για παράδειγμα, μιλώντας σε ένα φίλο μας ή κατά τη διάρκεια του ύπνου μας. Κάποιοι τα καταφέρνουν, για τους περισσότερους η ανάμνηση ενός δυσάρεστου γεγονότος κάποια στιγμή ξεθωριάζει ή μεταμορφώνεται σε κάτι λιγότερο δυσάρεστο. Κάποιοι όμως παραμένουν καθηλωμένοι στο περιστατικό του τραυματισμού αδυνατώντας να το «μεταβολίσουν» ψυχικά. Άλλα άτομα κατακερματίζεται το «εγώ» τους και οδηγούνται στη ψυχική αποδιοργάνωση, καταφεύγοντας στη χρήση αλκοόλ ή ουσιών στην προσπάθεια να καταστείλουν την εσωτερική τους ένταση και τον ψυχικό πόνο.</p>
+                    
+                    <img src="https://raw.githubusercontent.com/agelmet/ARANITOU/refs/heads/main/emdr2.png" alt="Μηχανισμός EMDR" class="editorial-image-frame">
+                    
+                    <p>Η Ψυχοθεραπεία EMDR είναι μια σχετικά βραχύχρονη θεραπεία και καθοδηγείται από το μοντέλο AIP (Adaptive Information Processing), σύμφωνα με το οποίο το υψηλό στρες και οι αντίξοες ή τραυματικές εμπειρίες αποθηκεύονται στο μυαλό σε μια «ακατέργαστη» μορφή, οι οποίες συμβάλλουν σε δυσφορικά συμπτώματα.</p>
+                    <p>Η παρέμβαση με τη θεραπεία EMDR είναι η μετατροπή της δυσλειτουργικής αφομοίωσης μιας τραυματικής εμπειρίας σε λειτουργική, μέσω αμφίπλευρης διέγερσης (BLS), που περιλαμβάνει ρυθμικές εναλλασσόμενες κινήσεις ή ήχους που ενεργοποιούν τα δύο ημισφαίρια του εγκεφάλου. Σκοπός της είναι να βοηθήσει τον εγκέφαλο να επεξεργαστεί τραυματικές αναμνήσεις, καθιστώντας τες λιγότερο ενοχλητικές. Η BLS βοηθά στην επεξεργασία τραυματικών αναμνήσεων για την ανακούφιση από ψυχική και σωματική δυσφορία, αξιοποιώντας το φυσικό σύστημα αυτοΐασης του εγκεφάλου.</p>
+                    
+                    <h3>Τρόποι εφαρμογής της αμφίπλευρης διέγερσης (BLS)</h3>
+                    <ul>
+                        <li><strong>Οπτική:</strong> Ο θεραπευτής κινεί το δάχτυλό του ή μια μπάρα φωτός μπρος-πίσω, με τα μάτια του ασθενούς να ακολουθούν την κίνηση. Αυτή η μέθοδος είναι παρόμοια με τις κινήσεις των ματιών κατά τη διάρκεια του ύπνου REM, που είναι σημαντικό στάδιο για την επεξεργασία μνημών.</li>
+                        <li><strong>Ακουστική:</strong> Εναλλάσσονται ακουστικοί τόνοι ή ήχοι στα αριστερά και δεξιά αυτιά του ασθενούς μέσω ακουστικών.</li>
+                        <li><strong>Απτική:</strong> Γίνονται διαδοχικά χτυπήματα σε διάφορα σημεία του σώματος, όπως τα γόνατα ή τα χέρια (Butterfly Hug - "αγκαλιά πεταλούδας").</li>
+                    </ul>
+
+                    <p>• Όταν είμαστε «κατακλυσμένοι από τραυματικές εμπειρίες», ο εγκέφαλός μας χάνει την ικανότητα να διατηρεί την νευρωνική ολοκλήρωση σε όλα τα δίκτυα που είναι αφιερωμένα στη συμπεριφορά, το συναίσθημα, την αίσθηση και τη συνειδητή επίγνωση.</p>
+                    <p>• Όταν οι αναμνήσεις αποθηκεύονται σε ααισθητηριακά και συναισθηματικά δίκτυα αλλά αποσυνδέονται από εκείνα που οργανώνουν το γνωστικό κομμάτι, τη γνώση και την προοπτική, γινόμαστε ευάλωτοι σε εισβολές προηγούμενων εμπειριών που ενεργοποιούνται από περιβαλλοντικά και εσωτερικά ερεθίσματα.</p>
+                    <p>• Στη διαδικασία της ψυχοθεραπείας, προσπαθούμε να επανενεργοποιήσουμε αυτά τα αποσυνδεδεμένα δίκτυα επεξεργάζοντας συνειδητά τραυματικές αναμνήσεις. Αυτή η επανένταξη επιτρέπει στα δίκτυα συνειδητής φλοιώδους επεξεργασίας να αναπτύξουν την ικανότητα να αναστέλλουν και να ελέγχουν παρελθούσες «τραυματικές αναμνήσεις».</p>
+                    
+                    <div class="bibliography-block">
+                        <strong>ΒΙΒΛΙΟΓΡΑΦΙΑ:</strong><br>
+                        • Shapiro, F. (2017). Eye movement desensitization and reprocessing (EMDR) therapy: Basic principles, protocols, and procedures. Guilford Publications.<br>
+                        • Van der Kolk, B. (2014). The body keeps the score: Brain, mind, and body in the healing of trauma. New York.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- New Editorial Section 3: CBT, Systems, Balance -->
+        <section id="cbt-balance" class="section-padding editorial-section">
+            <div class="container grid editorial-layout">
+                <div class="editorial-sticky-meta reveal">
+                    <span class="tag">Επιστημονικό Δοκίμιο 03</span>
+                    <h2>Γνωσιακή Θεωρία & Ισορροπία Ζωής</h2>
+                </div>
+                <div class="editorial-body reveal delay-1">
+                    <p>Η βασική ιδέα της Γνωσιακής Συμπεριφοριστικής Θεραπείας (Cognitive Behavioral Therapy- CBT) είναι ότι η εσωτερική (νοητική) κατασκευή του εξωτερικού κόσμου ασκεί αποφασιστική επίδραση πάνω στη σκέψη, τα συναισθήματα και τη συμπεριφορά του ατόμου. Τα συναισθήματα και η συμπεριφορά των ανθρώπων επηρεάζονται από τις γνωσίες, δηλαδή τις σκέψεις, τις πεποιθήσεις και τον τρόπο επεξεργασίας αυτών σε σχέση με τον εαυτό και τις περιστάσεις.</p>
+                    <p>Ένα γεγονός δε δύναται από μόνο του να προξενήσει αρνητικά συναισθήματα και δυσλειτουργικές τάσεις – συμπεριφορές σε ένα άτομο. Η νοητική επεξεργασία ενός γεγονότος περιλαμβάνει τη διαδικασία της ερμηνείας και της νοηματοδότησης από το άτομο, με την επιρροή μεταβλητών, όπως είναι το σύστημα πεποιθήσεων, το κοινωνικό περιβάλλον και το γενετικό υπόβαθρο. Η γνωσιακή θεωρία βασίζεται στην υπόθεση ότι τα συναισθήματα και οι συμπεριφορές των ανθρώπων επηρεάζονται από την αντίληψη εκείνων για τα γεγονότα.</p>
+                    
+                    <img src="https://raw.githubusercontent.com/agelmet/ARANITOU/refs/heads/main/mind.png" alt="Γνωσιακή Νοηματοδότηση" class="editorial-image-frame">
+                    
+                    <p>Η επιρροή των στωικών φιλοσόφων και συγκεκριμένα του Επίκτητου (1ος αιώνας π.Χ.) είναι προφανής: <em>«ταράσσει τους ανθρώπους ου τα πράγματα, αλλά τα περί των πραγμάτων δόγματα»</em>. Δηλαδή, δεν είναι η κατάσταση αυτή καθαυτή, στην οποία βρίσκονται οι άνθρωποι που καθορίζει τι αισθάνονται, αλλά ο τρόπος με τον οποίο εκείνοι αποδίδουν νόημα σε αυτή την κατάσταση. Στόχος της ψυχοθεραπευτικής διαδικασίας είναι η τροποποίηση του μοτίβου σκέψης και των κεντρικών πεποιθήσεων του ατόμου, έτσι ώστε να επιτευχθεί μία μόνιμη συναισθηματική και συμπεριφοριστική αλλαγή.</p>
+                    <p>Σύμφωνα με τον Seligman (2006), δεν είναι τα συμβάντα αυτά κάθε αυτά που οδηγούν σε ψυχολογικές διαταραχές αλλά ο χαρακτηριστικός τρόπος που αξιολογούνται από το ίδιο το άτομο. Στο πλαίσιο, ωστόσο, των νευροεπιστημών και των νέων κλάδων που αναπτύσσονται (όπως ψυχο-ανοσοβιολογία, νευρο-ψυχολογία, ψυχο-νευρο-ανοσο-βιολογία κ.λπ.), η γεφύρωση ανάμεσα στον νου και το σώμα οδηγεί στην άποψη, ότι ο ανθρώπινος εγκέφαλος είναι διαμορφωμένος με τρόπο που η ανάπτυξή του να καθορίζεται από την ποιότητα των διαπροσωπικών σχέσεων (Siegel, 1999). Σε αυτά τα πλαίσια βρίσκεται το Συνθετικό Μοντέλο Συστημικής Θεραπείας (ΣΥΜΟΣΥΘ), στο οποίο εκπαιδεύομαι, σύμφωνα με το οποίο η ψυχοθεραπεία είναι εξίσου αποτελεσματική για την αντιμετώπιση σωματικών συμπτωμάτων όσο είναι και για την αντιμετώπιση των ψυχοκοινωνικών προβλημάτων.</p>
+                    
+                    <h3 style="margin-top: 2rem;">«Work, Love and Play»</h3>
+                    <p>Στο κλασικό δίδυμο του Φρόιντ - εργασία και αγάπη - πολλοί σύγχρονοι ψυχαναλυτές έχουν προσθέσει ένα τρίτο: το παιχνίδι. Και όχι άδικα. Αυτοί οι τρεις τομείς είναι όπου εκφράζουμε ποιοι είμαστε, παλεύουμε με αυτό που υπήρξαμε και εξελισσόμαστε σε αυτό που θα μπορούσαμε να είμαστε. Το τρίπτυχο «εργασία, αγάπη και παιχνίδι» είναι μια έννοια που υποδηλώνει, ότι η επίτευξη της ισορροπίας μεταξύ αυτών των τριών τομέων είναι το κλειδί για μια ικανοποιητική, ενδιαφέρουσα και πλούσια ζωή.</p>
+                    
+                    <img src="https://raw.githubusercontent.com/agelmet/ARANITOU/refs/heads/main/eswter1.png" alt="Ισορροπία Τριπτύχου" class="editorial-image-frame">
+                    
+                    <p>Σαν ενήλικες κρίνεται απαραίτητο να ανταποκρινόμαστε στη χαρά της ανθρώπινης επαφής, στη χαρά της εργασίας και να απολαμβάνουμε τη ζωή μας. Η εργασία συνεπάγεται παραγωγική προσπάθεια και ευθύνη, η αγάπη περιλαμβάνει τις συνδέσεις και τις σχέσεις μας με τους άλλους ανθρώπους και το παιχνίδι περιλαμβάνει δραστηριότητες για απόλαυση, χαλάρωση και επαναφόρτιση.</p>
+                    
+                    <img src="https://raw.githubusercontent.com/agelmet/ARANITOU/refs/heads/main/eswter2.png" alt="Υγιής Ενσωμάτωση" class="editorial-image-frame">
+                    
+                    <p>Η επιδίωξη μόνο ενός τομέα αποκλείοντας τους άλλους, μπορεί να οδηγήσει σε δυσαρέσκεια, ενώ μια υγιής ενσωμάτωση και των τριών μπορεί να οδηγήσει σε μια ζωή γεμάτη επιτεύγματα και ηρεμία. Αν δυσκολευόμαστε σε οποιονδήποτε από αυτούς τους τομείς, καλό είναι να ζητάμε βοήθεια. Ένας «φροντισμένος» εαυτός, μέσω της ψυχοθεραπείας, θα φροντίσει να κάνει υγιείς σχέσεις, σε προσωπικό, ερωτικό, επαγγελματικό και κοινωνικό επίπεδο.</p>
+                    
+                    <div class="bibliography-block">
+                        <strong>ΒΙΒΛΙΟΓΡΑΦΙΑ:</strong><br>
+                        • Becvar, D.S. & Becvar, R.J. (2003). Family therapy: A systemic integration. 5th ed. Pearsons.<br>
+                        • Παπαδιώτη-Αθανασίου, Β. & Σοφτά-Nall, Λ. (Επιμ.). (2018). Σχολές οικογενειακής – συστημικής θεραπείας. Αθήνα: Εκδόσεις Τόπος.<br>
+                        • Seligman, M.E.P. (2006). Learned optimism: How to change your mind and your life. New York: Vintage books.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Practice Environment Space Mosaic -->
+        <section class="section-padding space-section">
+            <div class="container grid space-layout-grid">
+                <div class="space-header reveal">
+                    <h2>Ο Χώρος του Ιατρείου</h2>
+                    <p>Ένα περιβάλλον αρχιτεκτονικής ηρεμίας, ασφάλειας και απόλυτου απορρήτου στον Χολάργο.</p>
+                </div>
+                <div class="space-mosaic reveal delay-1">
+                    <img src="https://raw.githubusercontent.com/agelmet/ARANITOU/refs/heads/main/aran.jpg" class="lead-frame" alt="Κεντρικός Χώρος Συνεδριών">
+                    <img src="https://raw.githubusercontent.com/agelmet/ARANITOU/refs/heads/main/arandoor.jpg" class="secondary-frame" alt="Είσοδος Γραφείου">
+                    <img src="https://raw.githubusercontent.com/agelmet/ARANITOU/refs/heads/main/aran4.jpg" class="secondary-frame" alt="Εσωτερική Διαμόρφωση">
+                    <img src="https://raw.githubusercontent.com/agelmet/ARANITOU/refs/heads/main/aran3.jpg" class="ternary-frame" alt="Λεπτομέρεια Χώρου">
+                    <img src="https://raw.githubusercontent.com/agelmet/ARANITOU/refs/heads/main/ararn2.jpg" class="ternary-frame" alt="Γραφείο Διαβούλευσης">
+                    <img src="https://raw.githubusercontent.com/agelmet/ARANITOU/refs/heads/main/aran5.jpg" class="ternary-frame" alt="Ατμόσφαιρα Ιατρείου">
+                </div>
+            </div>
+        </section>
+
+        <!-- Dynamic Form & High Contrast Contact Node -->
+        <section id="contact" class="section-padding contact-section">
+            <div class="container grid contact-layout">
+                <div class="contact-details-panel reveal">
+                    <h2>Στοιχεία Επικοινωνίας</h2>
+                    <p>Προγραμματίστε την αρχική σας συνεδρία διά ζώσης ή εξ αποστάσεως ηλεκτρονικά.</p>
+                    
+                    <ul class="contact-list">
                         <li>
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
                             <div>
-                                <strong>Διεύθυνση</strong>
-                                Αετιδέων 24, Τ.Κ. 15561, Χολαργός, Αθήνα
+                                <span class="contact-item-title">Διεύθυνση</span>
+                                <span class="contact-item-value">Αετιδέων 24, Τ.Κ. 15561, Χολάργος, Αθήνα</span>
                             </div>
                         </li>
                         <li>
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
                             <div>
-                                <strong>Τηλέφωνο</strong>
-                                <a href="tel:+306937454374">+30 6937454374</a>
+                                <span class="contact-item-title">Τηλέφωνο επικοινωνίας</span>
+                                <span class="contact-item-value"><a href="tel:+306937454374">+30 6937454374</a></span>
                             </div>
                         </li>
                         <li>
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
                             <div>
-                                <strong>Email</strong>
-                                <a href="mailto:aranitoukaterina@gmail.com">aranitoukaterina@gmail.com</a>
+                                <span class="contact-item-title">Ηλεκτρονικό Ταχυδρομείο</span>
+                                <span class="contact-item-value"><a href="mailto:aranitoukaterina@gmail.com">aranitoukaterina@gmail.com</a></span>
                             </div>
                         </li>
                         <li>
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
                             <div>
-                                <strong>Ωράριο</strong>
-                                Δευτέρα – Παρασκευή (Κατόπιν ραντεβού)
+                                <span class="contact-item-title">Ωράριο Λειτουργίας</span>
+                                <span class="contact-item-value">Δευτέρα – Παρασκευή (Κατόπιν ραντεβού)</span>
                             </div>
                         </li>
                     </ul>
                 </div>
-
-                <div class="gallery-grid reveal delay-1">
-                    <img src="https://raw.githubusercontent.com/agelmet/ARANITOU/refs/heads/main/aran.jpg" class="gallery-img" alt="Χώρος Ιατρείου" loading="lazy">
-                    <img src="https://raw.githubusercontent.com/agelmet/ARANITOU/refs/heads/main/arandoor.jpg" class="gallery-img" alt="Είσοδος Ιατρείου" loading="lazy">
-                    <img src="https://raw.githubusercontent.com/agelmet/ARANITOU/refs/heads/main/aran4.jpg" class="gallery-img" alt="Λεπτομέρεια Χώρου" loading="lazy">
-                    <img src="https://raw.githubusercontent.com/agelmet/ARANITOU/refs/heads/main/aran3.jpg" class="gallery-img" alt="Εσωτερικός Χώρος" loading="lazy">
-                    <img src="https://raw.githubusercontent.com/agelmet/ARANITOU/refs/heads/main/ararn2.jpg" class="gallery-img" alt="Γραφείο" loading="lazy">
+                
+                <div class="contact-form-panel reveal delay-1">
+                    <form action="#" method="POST" onsubmit="event.preventDefault();">
+                        <div class="form-group">
+                            <label for="name">Ονοματεπώνυμο</label>
+                            <input type="text" id="name" class="form-control" placeholder="π.χ. Ιωάννης Παπαδόπουλος" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" class="form-control" placeholder="π.χ. ioannis@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Τηλέφωνο</label>
+                            <input type="tel" id="phone" class="form-control" placeholder="π.χ. 6900000000" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Μήνυμα / Σημείωση</label>
+                            <textarea id="message" rows="4" class="form-control" placeholder="Πώς μπορώ να σας βοηθήσω;"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Αποστολη Αιτηματος</button>
+                    </form>
                 </div>
             </div>
         </section>
     </main>
 
+    <!-- Professional Studio Footer Grid -->
     <footer class="footer">
-        <div class="container">
-            <p>Όλες οι συνεδρίες είναι απόρρητες βάση του άρθρου 9 του νόμου 991/79.</p>
-            <p>&copy; <script>document.write(new Date().getFullYear())</script> Κατερίνα Αρανίτου | Κλινική Ψυχολόγος. All rights reserved.</p>
-            <p><a href="https://www.advonmedia.com" target="_blank" rel="noopener noreferrer">designed by Advon Media</a></p>
+        <div class="container footer-container">
+            <div>
+                <p>Όλες οι συνεδρίες είναι απόρρητες βάση του άρθρου 9 του νόμου 991/79.</p>
+                <p>&copy; 2026 Κατερίνα Αρανίτου | Κλινική Ψυχολόγος. Όλα τα δικαιώματα διατηρούνται.</p>
+            </div>
+            <div>
+                <p><a href="https://www.advonmedia.com" target="_blank" rel="noopener noreferrer">designed by Advon Media</a></p>
+            </div>
         </div>
     </footer>
 
+    <!-- Clean Structural Interactions Script Framework -->
     <script>
         document.addEventListener("DOMContentLoaded", () => {
-            // 1. Loader Logic
+            // Unify Page Loader Collapse Sequence
             setTimeout(() => {
                 const loader = document.querySelector('.loader');
                 if (loader) loader.classList.add('hidden');
-            }, 1200);
+            }, 800);
 
-            // 2. Navigation Scroll Effect & Mobile Menu
+            // Floating Header Scrolled Controller
             const navbar = document.getElementById('navbar');
-            const hamburger = document.querySelector('.hamburger');
-            const navLinks = document.querySelector('.nav-links');
-            const links = document.querySelectorAll('.nav-links a');
-
             window.addEventListener('scroll', () => {
-                if (window.scrollY > 50) {
+                if (window.scrollY > 40) {
                     navbar.classList.add('scrolled');
                 } else {
                     navbar.classList.remove('scrolled');
                 }
             }, { passive: true });
+
+            // Mobile Hamburger Drawer Controller
+            const hamburger = document.querySelector('.hamburger');
+            const navLinks = document.querySelector('.nav-links');
+            const links = document.querySelectorAll('.nav-links a');
 
             hamburger.addEventListener('click', () => {
                 navLinks.classList.toggle('nav-active');
@@ -938,47 +1115,21 @@
                 });
             });
 
-            // 3. Scroll Reveal via IntersectionObserver
-            const revealOptions = {
-                threshold: 0.15,
-                rootMargin: "0px 0px -50px 0px"
-            };
-
-            const revealOnScroll = new IntersectionObserver((entries, observer) => {
+            // Clean Non-Polling Scroll Observers for Viewport Reveals
+            const revealObserver = new IntersectionObserver((entries, observer) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         entry.target.classList.add('active');
                         observer.unobserve(entry.target);
                     }
                 });
-            }, revealOptions);
-
-            document.querySelectorAll('.reveal').forEach(el => {
-                revealOnScroll.observe(el);
+            }, {
+                threshold: 0.1,
+                rootMargin: "0px 0px -40px 0px"
             });
 
-            // 4. Accordion Logic
-            const accordions = document.querySelectorAll('.accordion-btn');
-            accordions.forEach(acc => {
-                acc.addEventListener('click', function() {
-                    // Close others
-                    accordions.forEach(other => {
-                        if (other !== this && other.classList.contains('active')) {
-                            other.classList.remove('active');
-                            other.nextElementSibling.style.maxHeight = null;
-                        }
-                    });
-                    
-                    // Toggle current
-                    this.classList.toggle('active');
-                    const content = this.nextElementSibling;
-                    
-                    if (content.style.maxHeight) {
-                        content.style.maxHeight = null;
-                    } else {
-                        content.style.maxHeight = content.scrollHeight + "px";
-                    }
-                });
+            document.querySelectorAll('.reveal').forEach(element => {
+                revealObserver.observe(element);
             });
         });
     </script>
