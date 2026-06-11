@@ -8,7 +8,7 @@
 <meta property="og:title" content="Αικατερίνη Αρανίτου — Κλινική Ψυχολόγος">
 <meta property="og:description" content="Ένας ασφαλής, συμπεριληπτικός και επιστημονικά τεκμηριωμένος χώρος για εφήβους και ενήλικες. Χολαργός & online.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="https://raw.githubusercontent.com/agelmet/ARANITOU/refs/heads/main/%20aranitou2.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/agelmet/ARANITOU/refs/heads/main/aranitou2.jpg">
 <meta property="og:locale" content="el_GR">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -135,6 +135,13 @@ header.solid .nav-links a{color:var(--ink)}
 .nav-cta{border:1px solid currentColor;padding:.62em 1.25em;border-radius:40px;font-family:var(--ff-mono);font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--bone);transition:background .35s,color .35s,border-color .45s, transform 0.3s var(--ease), box-shadow 0.3s}
 header.solid .nav-cta{color:var(--ink)}
 .nav-cta:hover{background:var(--clay);border-color:var(--clay);color:var(--bone)!important; transform:translateY(-2px); box-shadow: 0 8px 15px rgba(110, 31, 42, 0.2);}
+
+/* Desktop specific adjustments for CTA button */
+@media(min-width:781px) {
+  .nav-cta { border: none; padding-left: 1em; padding-right: 1em; }
+  header.solid .nav-cta { border: none; }
+}
+
 .burger{display:none;flex-direction:column;gap:5px;width:30px;z-index:120}
 .burger span{height:1.5px;width:100%;background:var(--bone);transition:transform .4s var(--ease),opacity .3s,background .45s}
 header.solid .burger span{background:var(--ink)}
@@ -221,10 +228,14 @@ section{position:relative}
 /* ===== ABOUT ===== */
 .about{background:var(--bone)}
 .about-grid{display:grid;grid-template-columns:1fr;gap:clamp(3rem,6vw,5.5rem)}
-/* Adjusted align-items to 'start' to allow the image to become sticky while the right side text scrolls */
+
+/* Desktop Adjusted About Section: 
+   - Increased left column size (1.25fr) to make image significantly bigger
+   - Removed padding that previously constrained the image width 
+*/
 @media(min-width:880px){
-  .about-grid{grid-template-columns:1fr 1fr;align-items:start}
-  .about-portrait{position:sticky; top:120px; padding-right: clamp(1rem, 3vw, 2rem);}
+  .about-grid{grid-template-columns:1.25fr 0.75fr;align-items:start; gap: clamp(4rem, 6vw, 6rem);}
+  .about-portrait{position:sticky; top:120px; padding-right: 0;}
 }
 .about-portrait .frame{position:relative;border:1px solid var(--paper-line);padding:18px;background:linear-gradient(160deg,var(--bone-2),var(--bone)); box-shadow: var(--shadow-soft); border-radius: 4px;}
 /* Removed aspect ratio/cropping to show full context of image */
@@ -335,6 +346,11 @@ section{position:relative}
 .bls:hover {transform: translateY(-5px); box-shadow: var(--shadow-hover);}
 .bls .bk{font-family:var(--ff-mono);font-size:.66rem;letter-spacing:.14em;color:var(--clay);text-transform:uppercase;display:block;margin-bottom:.6rem; font-weight:600;}
 .bls .bv{font-size:.95rem;color:var(--ink-soft); line-height: 1.5;}
+
+/* Desktop Specific Adjustment: Push image down in the 3rd essay for better symmetry */
+@media(min-width:920px) {
+  .essay:nth-of-type(3) .e-figs { margin-top: 6rem; }
+}
 
 /* ===== SPACE GALLERY ===== */
 .space{background:var(--ink);color:var(--bone)}
@@ -524,7 +540,6 @@ footer{background:var(--ink);color:var(--bone); border-top: 1px solid var(--line
     <div class="about-grid">
       <div class="about-portrait reveal">
         <div class="frame">
-          <!-- Fixed missing image link by including the exact URL with %20 -->
           <img class="zoomable" src="https://raw.githubusercontent.com/agelmet/ARANITOU/refs/heads/main/%20aranitou2.jpg" alt="Πορτρέτο της ψυχολόγου Αικατερίνης Αρανίτου" loading="lazy">
         </div>
         <div class="tag">Αικατερίνη Γ. Αρανίτου · <b>BSc, MSc</b></div>
