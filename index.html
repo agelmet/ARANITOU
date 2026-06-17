@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Αικατερίνη Αρανίτου — Κλινική Ψυχολόγος | Χολαργός</title>
-<meta name="description" content="Αικατερίνη Αρανίτου, αδειούχος Κλινική Ψυχολόγος στον Χολαργό. Συστημική & Γνωσιακή ψυχοθεραπεία, EMDR τραυματοθεραπεία, συμβουλευτική εφήβων & ενηλίκων. Δια ζώσης & εξ αποστάσεως.">
+<meta name="description" content="Αικατερίνη Αρανίτου, αδειούχος Κλινική Ψυχολόγος στον Χολαργό. Συστημική & Γνωσιακή ψυχοθεραπεία, EMDR τραυματοθεραπεία, συμβουλευτική ενηλίκων. Δια ζώσης & εξ αποστάσεως.">
 <meta property="og:title" content="Αικατερίνη Αρανίτου — Κλινική Ψυχολόγος">
-<meta property="og:description" content="Ένας ασφαλής, συμπεριληπτικός και επιστημονικά τεκμηριωμένος χώρος για εφήβους και ενήλικες. Χολαργός & online.">
+<meta property="og:description" content="Ένας ασφαλής, συμπεριληπτικός και επιστημονικά τεκμηριωμένος χώρος για ενήλικες. Χολαργός & online.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://raw.githubusercontent.com/agelmet/ARANITOU/refs/heads/main/aranitou2.jpg">
 <meta property="og:locale" content="el_GR">
@@ -28,7 +28,6 @@
   --paper-line:rgba(33,28,26,.14);
   --line-on-dark:rgba(243,238,231,.18);
   
-  /* Elevate UI with premium shadows */
   --shadow-soft: 0 12px 34px rgba(0,0,0,0.06);
   --shadow-hover: 0 22px 45px rgba(0,0,0,0.12);
   --shadow-dark: 0 15px 40px rgba(0,0,0,0.4);
@@ -136,7 +135,6 @@ header.solid .nav-links a{color:var(--ink)}
 header.solid .nav-cta{color:var(--ink)}
 .nav-cta:hover{background:var(--clay);border-color:var(--clay);color:var(--bone)!important; transform:translateY(-2px); box-shadow: 0 8px 15px rgba(110, 31, 42, 0.2);}
 
-/* Desktop specific adjustments for CTA button */
 @media(min-width:781px) {
   .nav-cta { border: none; padding-left: 1em; padding-right: 1em; }
   header.solid .nav-cta { border: none; }
@@ -153,7 +151,6 @@ body.menu-open .burger span:nth-child(3){transform:translateY(-6.5px) rotate(-45
   .nav-links:not(.overlay-links){display:none}
   .burger{display:flex}
 }
-/* overlay menu */
 .overlay{position:fixed;inset:0;z-index:100;background:var(--ink);clip-path:circle(0% at calc(100% - 40px) 40px);transition:clip-path .7s var(--ease-inout);display:flex;flex-direction:column;justify-content:center;padding:var(--gut)}
 body.menu-open .overlay{clip-path:circle(150% at calc(100% - 40px) 40px)}
 .overlay-links{display:flex;flex-direction:column;gap:1.1rem}
@@ -177,19 +174,21 @@ body.menu-open .overlay-links a{opacity:1;transform:none}
   100% { transform: scale(1.1) translate(-1.5%, 1.5%); }
 }
 
-/* Modifying Hero to be higher and more to the left */
 .hero-inner{position:relative;z-index:2;width:100%;max-width:var(--maxw);margin:0 auto 0 0;padding:0 clamp(20px,4vw,60px) clamp(100px,22vh,180px)}
 .hero-eyebrow{display:flex;align-items:center;gap:1rem;margin-bottom:clamp(1.4rem,4vh,2.6rem);overflow:hidden}
 .hero-eyebrow .e-line{height:1px;width:0;background:var(--gild);animation:drawx 1s var(--ease) 1.7s forwards; box-shadow: 0 0 10px var(--gild);}
 @keyframes drawx{to{width:clamp(40px,8vw,110px)}}
 .hero-eyebrow span{font-family:var(--ff-mono);font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;color:var(--mist);opacity:0;animation:fadeup .9s var(--ease) 1.85s forwards}
-.hero h1{font-family:var(--ff-display);font-weight:300;font-size:var(--fs-mega);line-height:.92;letter-spacing:-.02em;margin-bottom:clamp(1.5rem,4vh,2.4rem); text-shadow: 0 10px 30px rgba(0,0,0,0.5);}
+
+/* Decreased size and increased transparency per client request */
+.hero h1{font-family:var(--ff-display);font-weight:300;font-size:clamp(2.5rem, 6vw, 4.8rem);line-height:.92;letter-spacing:-.02em;margin-bottom:clamp(1.5rem,4vh,2.4rem); color: rgba(255, 255, 255, 0.85); text-shadow: 0 4px 15px rgba(0,0,0,0.3);}
 .hero h1 .l{display:block;overflow:hidden}
 .hero h1 .l b{display:block;font-weight:300;transform:translateY(105%);animation:rise 1.1s var(--ease) forwards}
 .hero h1 .l:nth-child(1) b{animation-delay:.9s}
 .hero h1 .l:nth-child(2) b{animation-delay:1.05s;}
-.hero h1 .l i {font-style:italic;font-weight:400;color:var(--gild);font-family:var(--ff-edit)}
+.hero h1 .l i {font-style:italic;font-weight:400;color: rgba(176,138,90,0.85);font-family:var(--ff-edit)}
 @keyframes rise{to{transform:none}}
+
 .hero-thesis{max-width:48ch;font-family:var(--ff-edit);font-style:italic;font-size:clamp(1.15rem,1.8vw,1.6rem);line-height:1.5;color:#E9E2D7;opacity:0;animation:fadeup 1s var(--ease) 1.6s forwards; text-shadow: 0 4px 10px rgba(0,0,0,0.5);}
 .hero-meta{display:flex;flex-wrap:wrap;gap:1.4rem 2.8rem;margin-top:clamp(1.8rem,4vh,2.8rem);opacity:0;animation:fadeup 1s var(--ease) 2s forwards; background: rgba(255,255,255,0.03); padding: 1.5rem 2rem; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05); backdrop-filter: blur(5px); max-width: max-content;}
 .hero-meta .hm{display:flex;flex-direction:column;gap:.35rem}
@@ -229,42 +228,25 @@ section{position:relative}
 .about{background:var(--bone)}
 .about-grid{display:grid;grid-template-columns:1fr;gap:clamp(3rem,6vw,5.5rem)}
 
-/* Desktop Adjusted About Section: 
-   - Increased left column size (1.25fr) to make image significantly bigger
-   - Removed padding that previously constrained the image width 
-*/
 @media(min-width:880px){
   .about-grid{grid-template-columns:1.25fr 0.75fr;align-items:start; gap: clamp(4rem, 6vw, 6rem);}
   .about-portrait{position:sticky; top:120px; padding-right: 0;}
 }
 .about-portrait .frame{position:relative;border:1px solid var(--paper-line);padding:18px;background:linear-gradient(160deg,var(--bone-2),var(--bone)); box-shadow: var(--shadow-soft); border-radius: 4px;}
-/* Removed aspect ratio/cropping to show full context of image */
 .about-portrait img{width:100%; height:auto; object-fit:contain; object-position:center; filter:saturate(.96); border-radius: 2px;}
 .about-portrait .tag{position:absolute;left:-10px;bottom:30px;background:var(--ink);color:var(--bone);padding:.9rem 1.4rem;font-family:var(--ff-mono);font-size:.68rem;letter-spacing:.16em;text-transform:uppercase; box-shadow: var(--shadow-dark); border-radius: 2px;}
 .about-portrait .tag b{color:var(--gild);font-weight:500}
 .about-lead{font-family:var(--ff-edit);font-style:italic;font-size:clamp(1.4rem,2.4vw,2.1rem);line-height:1.45;color:var(--ink);margin-bottom:1.8rem}
 .about-lead .hl{color:var(--clay); font-weight:500;}
-.about-body p{margin-bottom:1.2rem;color:var(--ink-soft); font-size:1.05rem;}
-.creds{margin-top:2.5rem;border-top:1px solid var(--paper-line)}
-.cred{display:grid;grid-template-columns:auto 1fr;gap:1.2rem;padding:1.2rem 0;border-bottom:1px solid var(--paper-line);align-items:baseline; transition: background 0.3s var(--ease), padding-left 0.3s var(--ease);}
-.cred:hover {background: rgba(255,255,255,0.4); padding-left: 10px;}
-.cred .c-ix{font-family:var(--ff-mono);font-size:.66rem;color:var(--gild);letter-spacing:.1em; font-weight:600;}
-.cred .c-main b{font-weight:600;display:block; color:var(--ink); font-size:1.05rem;}
-.cred .c-main span{color:var(--ink-soft);font-size:.94rem; display:block; margin-top:0.2rem;}
-.pullquote{margin:clamp(2.5rem,5vh,4rem) 0 0 0;padding:2rem 0 2rem 2.5rem;border-left:3px solid var(--clay); background: linear-gradient(90deg, rgba(110,31,42,0.03), transparent);}
-.pullquote p{font-family:var(--ff-edit);font-style:italic;font-size:clamp(1.4rem,2.5vw,1.9rem);line-height:1.45; color:var(--ink);}
-.pullquote cite{display:block;margin-top:1.2rem;font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--clay);font-weight:600; font-style:normal}
+.about-body p{margin-bottom:1.2rem;color:var(--ink-soft); font-size:1.05rem; line-height: 1.7;}
 
 /* ===== APPROACH / TERM NOTE ===== */
 .note-band{background:var(--ink);color:var(--bone); position:relative; overflow:hidden;}
-.note-band::before {content:""; position:absolute; inset:0; background:radial-gradient(circle at right top, rgba(176,138,90,0.08), transparent 50%); pointer-events:none;}
+.note-band::before {content:""; position:absolute; inset:0; background:radial-gradient(circle at center, rgba(176,138,90,0.08), transparent 60%); pointer-events:none;}
 .note-band .wrap{padding-top:clamp(80px,11vh,130px);padding-bottom:clamp(80px,11vh,130px)}
-.note-grid{display:grid;gap:3rem;grid-template-columns:1fr}
-@media(min-width:880px){.note-grid{grid-template-columns:1.2fr 1fr;gap:clamp(4rem,7vw,7rem);align-items:center}}
-.note-grid .nq{font-family:var(--ff-display);font-weight:300;font-size:clamp(2.2rem,4vw,3.4rem);line-height:1.2;letter-spacing:-.01em; text-shadow: 0 4px 15px rgba(0,0,0,0.3);}
+.note-grid{display:block; text-align:center; max-width:900px; margin:0 auto;}
+.note-grid .nq{font-family:var(--ff-display);font-weight:300;font-size:clamp(2rem,3.5vw,3rem);line-height:1.3;letter-spacing:-.01em; text-shadow: 0 4px 15px rgba(0,0,0,0.3);}
 .note-grid .nq b{color:var(--gild);font-weight:300;font-style:italic;font-family:var(--ff-edit)}
-.note-grid .nbody p{color:#D8D1C6;margin-bottom:1.4rem; font-size:1.1rem; line-height:1.7;}
-.note-grid .nbody p:last-child{margin-bottom:0}
 
 /* ===== SERVICES (accordion) ===== */
 .services{background:var(--bone-2)}
@@ -289,25 +271,23 @@ section{position:relative}
 .svc-panel-in .tags span{font-family:var(--ff-mono);font-size:.68rem;letter-spacing:.1em;color:var(--sage-deep);padding-left:1.2rem;position:relative; text-transform:uppercase; font-weight:500;}
 .svc-panel-in .tags span::before{content:"";position:absolute;left:0;top:.55em;width:8px;height:1.5px;background:var(--clay)}
 .svc-panel-in .txt{color:var(--ink-soft); font-size:1.05rem; line-height:1.7;}
+.svc-panel-in .txt p {margin-bottom: 1.2rem;}
+.svc-panel-in .txt p:last-child {margin-bottom: 0;}
+.svc-list-ul { margin: 1.2rem 0 1.2rem 1.8rem; padding: 0; }
+.svc-list-ul li { margin-bottom: 0.6rem; }
 
-/* ===== PILLARS (Architecture of resilience) ===== */
+/* ===== PILLARS / MENTAL RESILIENCE ===== */
 .pillars{background:var(--ink);color:var(--bone)}
 .pillars .sec-head h2{color:var(--bone)}
 .pillars .sec-head h2 em{color:var(--gild)}
 .pillars .sec-head .coord{color:var(--gild)}
-.pillars-lead{max-width:68ch;color:#D8D1C6;margin-bottom:clamp(3.5rem,7vh,5rem);font-size:clamp(1.15rem,1.7vw,1.35rem); line-height:1.6;}
-.pillars-lead em{font-family:var(--ff-edit);color:var(--gild);font-style:italic}
-.pillar-grid{display:grid;gap:2rem;grid-template-columns:1fr}
-@media(min-width:880px){.pillar-grid{grid-template-columns:repeat(3,1fr); gap:2rem;}}
-.pillar{padding:clamp(2.5rem,4vw,3.5rem) clamp(2rem,3vw,2.5rem);border:1px solid rgba(255,255,255,0.06);position:relative;transition:transform .5s var(--ease), box-shadow .5s var(--ease), background .5s var(--ease); background: rgba(255,255,255,0.01); border-radius: 4px;}
-.pillar:hover{background:rgba(255,255,255,0.04); transform:translateY(-12px); box-shadow: var(--shadow-dark), 0 0 0 1px rgba(176,138,90,0.2) inset;}
-.pillar .p-ix{font-family:var(--ff-mono);font-size:.75rem;color:var(--gild);letter-spacing:.16em;margin-bottom:2rem;display:block; font-weight:600;}
-.pillar h3{font-family:var(--ff-display);font-weight:400;font-size:1.45rem;margin-bottom:1.2rem;line-height:1.2; color:var(--bone);}
-.pillar p{color:#CFC8BD;font-size:.98rem;line-height:1.7}
-.pillar .p-glyph{position:absolute;top:clamp(2.5rem,4vw,3.5rem);right:clamp(2rem,3vw,2.5rem);width:36px;height:36px;opacity:.3; transition: opacity 0.5s, transform 0.5s;}
-.pillar:hover .p-glyph {opacity: 1; transform: scale(1.1) rotate(5deg); color: var(--gild);}
-.pillars-foot{margin-top:clamp(3.5rem,7vh,5rem);padding-top:2.5rem;border-top:1px solid var(--line-on-dark);font-family:var(--ff-edit);font-style:italic;font-size:clamp(1.4rem,2.8vw,2.2rem);line-height:1.4;max-width:40ch; color:#E9E2D7;}
-.pillars-foot b{color:var(--gild);font-weight:400}
+.resilience-flex { display: grid; grid-template-columns: 1fr; gap: 3rem; }
+@media(min-width: 880px) {
+  .resilience-flex { grid-template-columns: 1fr 1fr; align-items: center; gap: 4rem; }
+}
+.pillars-lead{color:#D8D1C6;margin-bottom:1.5rem;font-size:clamp(1.15rem,1.7vw,1.35rem); line-height:1.6;}
+.pillars-lead:last-child {margin-bottom: 0;}
+.resilience-img img { width: 100%; height: auto; border-radius: 4px; box-shadow: var(--shadow-dark); border: 1px solid rgba(255,255,255,0.06); }
 
 /* ===== TRIPTYCH work/love/play ===== */
 .triptych{background:var(--bone)}
@@ -315,7 +295,8 @@ section{position:relative}
 @media(min-width:760px){.tri-grid{grid-template-columns:repeat(3,1fr)}}
 .tri{background:var(--bone); border: 1px solid var(--paper-line); padding:clamp(2.5rem,4vw,3.5rem) clamp(2rem,3vw,2.8rem);transition:transform .5s var(--ease), box-shadow .5s var(--ease), background .5s var(--ease); border-radius: 4px; box-shadow: var(--shadow-soft);}
 .tri:hover{background:var(--bone-2); transform:translateY(-10px); box-shadow: var(--shadow-hover);}
-.tri .t-no{font-family:var(--ff-mono);font-size:.7rem;color:var(--clay);letter-spacing:.16em; font-weight:600;}
+/* Significantly increased font size per client request */
+.tri .t-no{font-family:var(--ff-mono);font-size:1.4rem;color:var(--clay);letter-spacing:.1em; font-weight:600;}
 .tri .t-gr{margin:2rem 0 1.5rem;color:var(--sage); transition: transform 0.5s var(--ease), color 0.5s;}
 .tri:hover .t-gr {transform: scale(1.1) translateY(-5px); color: var(--clay);}
 .tri .t-gr svg{width:65px;height:65px;display:block}
@@ -324,33 +305,6 @@ section{position:relative}
 .tri p{color:var(--ink-soft);font-size:1.02rem; line-height:1.7;}
 .tri-note{margin-top:2.5rem;max-width:70ch;font-family:var(--ff-edit);font-style:italic;font-size:clamp(1.2rem,2vw,1.6rem);color:var(--ink);line-height:1.5; padding-left: 1.5rem; border-left: 2px solid var(--gild);}
 
-/* ===== KNOWLEDGE / essays ===== */
-.know{background:var(--bone-2)}
-.essay{display:grid;grid-template-columns:1fr;gap:clamp(2.5rem,5vw,4.5rem);padding:clamp(3.5rem,6vh,5rem) 0;border-top:1px solid var(--paper-line)}
-@media(min-width:920px){.essay{grid-template-columns:1fr 1.1fr;align-items:start}.essay.rev .e-figs{order:-1}}
-.essay .e-tag{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--clay);margin-bottom:1.2rem; font-weight:600;}
-.essay h3{font-family:var(--ff-display);font-weight:300;font-size:clamp(1.8rem,3.2vw,2.6rem);line-height:1.15;margin-bottom:1.4rem;letter-spacing:-.01em; color:var(--ink);}
-.essay h3 em{font-family:var(--ff-edit);font-style:italic;color:var(--clay)}
-.essay .e-txt p{margin-bottom:1.1rem;color:var(--ink-soft);font-size:1.05rem; line-height:1.7;}
-.essay .e-txt p:last-child{margin-bottom:0}
-.essay .e-pull{font-family:var(--ff-edit);font-style:italic;font-size:1.25rem;color:var(--ink);border-left:2px solid var(--gild);padding-left:1.4rem;margin:1.6rem 0; background: linear-gradient(90deg, rgba(176,138,90,0.05), transparent); padding-top: 0.5rem; padding-bottom: 0.5rem;}
-/* Stacked vertically symmetrically */
-.e-figs{display:flex; flex-direction:column; gap:2rem;}
-.figure{border:1px solid var(--paper-line);background:var(--ink);overflow:hidden;position:relative; border-radius: 4px; box-shadow: var(--shadow-soft);}
-/* Removed aspect ratio, width 100% and height auto makes them true to size with no crop */
-.figure img{width:100%;height:auto;object-fit:contain;transition:transform 1.1s var(--ease), filter 0.8s; display:block;}
-.figure:hover img{transform:scale(1.06); filter: brightness(1.1);}
-.figure figcaption{position:absolute;left:0;bottom:0;right:0;background:linear-gradient(transparent,rgba(15,12,11,.95));color:var(--bone);font-family:var(--ff-mono);font-size:.65rem;letter-spacing:.12em;text-transform:uppercase;padding:2rem 1.2rem 1rem;}
-.bls-row{display:flex;flex-wrap:wrap;gap:1.2rem;margin-top:2rem}
-.bls{flex:1;min-width:160px;border:1px solid var(--paper-line);padding:1.4rem;background:var(--bone); border-radius: 4px; transition: transform 0.4s var(--ease), box-shadow 0.4s var(--ease);}
-.bls:hover {transform: translateY(-5px); box-shadow: var(--shadow-hover);}
-.bls .bk{font-family:var(--ff-mono);font-size:.66rem;letter-spacing:.14em;color:var(--clay);text-transform:uppercase;display:block;margin-bottom:.6rem; font-weight:600;}
-.bls .bv{font-size:.95rem;color:var(--ink-soft); line-height: 1.5;}
-
-/* Desktop Specific Adjustment: Push image down in the 3rd essay for better symmetry */
-@media(min-width:920px) {
-  .essay:nth-of-type(3) .e-figs { margin-top: 6rem; }
-}
 
 /* ===== SPACE GALLERY ===== */
 .space{background:var(--ink);color:var(--bone)}
@@ -361,7 +315,6 @@ section{position:relative}
 .gal{display:grid;gap:1.2rem;grid-template-columns:repeat(2,1fr)}
 @media(min-width:760px){.gal{grid-template-columns:repeat(12,1fr);grid-auto-rows:160px}}
 .gcell{overflow:hidden;position:relative;border:1px solid rgba(255,255,255,0.08); border-radius: 4px; background: #000; box-shadow: var(--shadow-dark);}
-/* Preserved cover/crop here for the grid as requested */
 .gcell img{width:100%;height:100%;object-fit:cover;transition:transform 0.8s var(--ease),filter .8s var(--ease);filter:saturate(.9) opacity(0.85);}
 .gcell:hover img{transform:scale(1.08);filter:saturate(1.1) opacity(1);}
 @media(min-width:760px){
@@ -472,7 +425,6 @@ footer{background:var(--ink);color:var(--bone); border-top: 1px solid var(--line
       <a href="#about">Προφίλ</a>
       <a href="#services">Υπηρεσίες</a>
       <a href="#pillars">Προσέγγιση</a>
-      <a href="#knowledge">Γνώση</a>
       <a href="#contact" class="nav-cta">Ραντεβού</a>
     </div>
     <button class="burger" id="burger" aria-label="Άνοιγμα μενού" aria-expanded="false">
@@ -488,8 +440,7 @@ footer{background:var(--ink);color:var(--bone); border-top: 1px solid var(--line
     <a href="#services"><span class="ix">Β.02</span>Υπηρεσίες</a>
     <a href="#pillars"><span class="ix">Γ.03</span>Προσέγγιση</a>
     <a href="#triptych"><span class="ix">Δ.04</span>Φιλοσοφία</a>
-    <a href="#knowledge"><span class="ix">Ε.05</span>Γνώση</a>
-    <a href="#contact"><span class="ix">Ϛ.06</span>Επικοινωνία</a>
+    <a href="#contact"><span class="ix">Ε.05</span>Επικοινωνία</a>
   </nav>
   <div class="overlay-foot">
     Αετιδέων 24, Χολαργός · <a href="tel:+306937454374">+30 693 745 4374</a>
@@ -516,7 +467,7 @@ footer{background:var(--ink);color:var(--bone); border-top: 1px solid var(--line
     <div class="hero-meta">
       <div class="hm"><span class="k">Εξειδίκευση</span><span class="v">Συστημική · CBT · EMDR</span></div>
       <div class="hm"><span class="k">Πλαίσιο</span><span class="v">Δια ζώσης & εξ αποστάσεως</span></div>
-      <div class="hm"><span class="k">Για</span><span class="v">Εφήβους 15+ & Ενήλικες</span></div>
+      <div class="hm"><span class="k">Για</span><span class="v">Ενήλικες</span></div>
     </div>
   </div>
   <div class="scrollcue"><span class="sc-txt">SCROLL</span><span class="sc-l"></span></div>
@@ -525,8 +476,8 @@ footer{background:var(--ink);color:var(--bone); border-top: 1px solid var(--line
 <!-- ============ MARQUEE ============ -->
 <div class="marquee" aria-hidden="true">
   <div class="mq-track" id="mqTrack">
-    <span>Συστημική Ψυχοθεραπεία</span><span>EMDR Τραυματοθεραπεία</span><span>Γνωσιακή Συμπεριφορική Θεραπεία</span><span>Διαχείριση Άγχους & Burnout</span><span>Συμβουλευτική Εφήβων</span><span>Ψυχική Ανθεκτικότητα</span>
-    <span>Συστημική Ψυχοθεραπεία</span><span>EMDR Τραυματοθεραπεία</span><span>Γνωσιακή Συμπεριφορική Θεραπεία</span><span>Διαχείριση Άγχους & Burnout</span><span>Συμβουλευτική Εφήβων</span><span>Ψυχική Ανθεκτικότητα</span>
+    <span>Συστημική Ψυχοθεραπεία</span><span>EMDR Τραυματοθεραπεία</span><span>Γνωσιακή Συμπεριφορική Θεραπεία</span><span>Διαχείριση Άγχους & Burnout</span><span>Ψυχική Ανθεκτικότητα</span>
+    <span>Συστημική Ψυχοθεραπεία</span><span>EMDR Τραυματοθεραπεία</span><span>Γνωσιακή Συμπεριφορική Θεραπεία</span><span>Διαχείριση Άγχους & Burnout</span><span>Ψυχική Ανθεκτικότητα</span>
   </div>
 </div>
 
@@ -545,21 +496,20 @@ footer{background:var(--ink);color:var(--bone); border-top: 1px solid var(--line
         <div class="tag">Αικατερίνη Γ. Αρανίτου · <b>BSc, MSc</b></div>
       </div>
       <div class="about-text">
-        <p class="about-lead reveal">Η Αικατερίνη Αρανίτου είναι αδειούχος <span class="hl">Κλινική Ψυχολόγος</span> με ένα στιβαρό αμερικανικό ακαδημαϊκό υπόβαθρο και μια σπάνια, πολύπλευρη κλινική κατάρτιση.</p>
         <div class="about-body reveal d1">
-          <p>Διατηρεί το ιδιωτικό της γραφείο στον Χολαργό, ενώ παράλληλα πραγματοποιεί και εξ' αποστάσεως συνεδρίες. Απέκτησε το πτυχίο της στην Ανθρωποκεντρική Ψυχολογία (BSc) από το State University of New York και το μεταπτυχιακό της δίπλωμα (MSc) στην Ψυχολογία, με ειδίκευση στην Κλινική Ψυχική Υγεία, από το Hellenic American University.</p>
-          <p>Η επαγγελματική της διαδρομή είναι άρρηκτα συνδεδεμένη με τον χώρο των Ενόπλων Δυνάμεων. Υπηρετεί ως Αξιωματικός και Ψυχολόγος στο 414 Στρατιωτικό Νοσοκομείο Ειδικών Νοσημάτων, έχοντας διατελέσει Επιτελής Αξιωματικός στη Διεύθυνση Υγειονομικού του ΓΕΕΘΑ. Στο ιδιωτικό της γραφείο προσφέρει έναν απόλυτα ασφαλή, συμπεριληπτικό και επιστημονικά τεκμηριωμένο χώρο για εφήβους και ενήλικες.</p>
+          <p>Η Αρανίτου Κατερίνα είναι Ψυχολόγος με μετεκπαίδευση στην Κλινική Ψυχικής Υγείας και διατηρεί το ιδιωτικό γραφείο της στο Χολαργό. Έχει άδεια ασκήσεως επαγγέλματος, με αριθμό 691715, είναι Τακτικό μέλος του Συλλόγου Ελλήνων Ψυχολόγων (ΣΕΨ) με ΑΜ: 3455 και Μέλος της American Psychological Association (APA).</p>
+          <p>Ξεκίνησε την ακαδημαϊκή της πορεία αποκτώντας πτυχίο Ψυχολογίας, από το κρατικό Πανεπιστήμιο της Νέας Υόρκης (State University of New York – Empire State University). Είναι κάτοχος Μεταπτυχιακού διπλώματος (MSc) στην Ψυχολογία με ειδίκευση στην Κλινική Ψυχικής Υγείας, από το Ηellenic American University, New Hampshire – USA και με εξειδίκευση στη Γνωστική Συμπεριφορική Θεραπεία (CBT).</p>
+          <p>Το τριετές Μεταπτυχιακό Πρόγραμμα στην Ψυχολογία (MSPsy) παρείχε ολοκληρωμένη εκπαίδευση και κατάρτιση στην τεκμηριωμένη (evidence-based) γνωσιακή συμπεριφοριστική προσέγγιση στη συμβουλευτική και την ψυχοθεραπεία.</p>
+          <p>Είναι εκπαιδευμένη στη Θεραπεία Τραύματος με τη μέθοδο EMDR από την TAC HELLAS.</p>
+          <p>Επιπλέον, ειδικεύεται μέσω τετραετούς προγράμματος εκπαίδευσης στην Συστημική ψυχοθεραπεία, στο Εργαστήριο Διερεύνησης Ανθρωπίνων Σχέσεων, από τον Σεπτέμβριο 2024.</p>
+          <p>Στο πλαίσιο της μετεκπαίδευσης της στην Κλινική Ψυχικής Υγείας πραγματοποίησε κλινική πρακτική άσκηση και συμβουλευτική, υπό εποπτεία στη Ψυχιατρική Κλινική του 414 Στρατιωτικού Νοσοκομείου Ειδικών Νοσημάτων, από τον Ιούλιο 2021 έως τον Ιούλιο 2023.</p>
+          <p>Επίσης, κατά τη διάρκεια των βασικών σπουδών της στην Ψυχολογία, πραγματοποίησε πρακτική άσκηση στο Διακλαδικό Κέντρο Ψυχικής Υγείας, από το 2018 έως 2019.</p>
+          <p>Έχει συμμετάσχει σε αρκετά επιστημονικά συνέδρια, συγκεκριμένα, στο 63th Annual European Branch of the American Counseling Association (EB-ACA) Conference, που διεξήχθη στις 21-22 Οκτωβρίου 2022, βραβεύτηκε για την έρευνα που έχει διεξάγει στα πλαίσια του μεταπτυχιακού της, με τίτλο "Ψυχική Ανθεκτικότητα ως Προστατευτικός Παράγοντας στις Ψυχιατρικές Διαταραχές κατά τη διάρκεια της στρατιωτικής θητείας".</p>
+          <p>Επίσης, συμμετείχε ως ομιλήτρια στο 34ο Πανελλήνιο Συνέδριο Ψυχιατρικής τον Μάιο 2026, με θέμα «Ψυχική Ανθεκτικότητα, Συμπτωματολογία και Βιοδείκτες σε Άνδρες Νεοσύλλεκτους – Διερευνητική Μελέτη στις Ένοπλες Δυνάμεις».</p>
+          <p>Επίσης, συμμετείχε ως ομιλήτρια για την Τεχνητή Νοημοσύνη στο χώρο της Ψυχικής Υγείας - τίτλος "Global Perspectives on Ethical Artificial Intelligence in Mental Health Care: Navigating the Ethical and Social Challenges", τον Οκτώβριο 2024, στο 65th Annual European Branch of the American Counseling Association (EB-ACA) Conference, στη Νυρεμβέργη Γερμανία.</p>
+          <p>Τέλος, συμμετείχε στο 6th ICMM Pan European Regional Congress on Military Medicine, τον Απρίλιο 2024 και παρακολούθησε αρκετά Διεπιστημονικά Συνέδρια «Εγκέφαλος και Νους» το 2022, το 2023 & το 2024, αντίστοιχα.</p>
+          <p>Κατά τη διάρκεια των εκπαιδεύσεων της στον τομέα της ψυχικής υγείας, ήταν στέλεχος των Ενόπλων Δυνάμεων με πολυετή εμπειρία, η οποία της προσέφερε βαθιά κατανόηση της ανθρώπινης συμπεριφοράς, του εργασιακού στρες και της ψυχικής ανθεκτικότητας—στοιχεία που εμπλουτίζουν την θεραπευτική της προσέγγιση.</p>
         </div>
-        <div class="creds reveal d2">
-          <div class="cred"><span class="c-ix">001</span><span class="c-main"><b>Συστημική Ψυχοθεραπεία</b><span>4ετές πρόγραμμα ειδίκευσης — Εργαστήριο Διερεύνησης Ανθρωπίνων Σχέσεων</span></span></div>
-          <div class="cred"><span class="c-ix">002</span><span class="c-main"><b>Γνωσιακή Συμπεριφορική Θεραπεία (CBT)</b><span>Κ.Ε.ΔΙ.ΒΙ.Μ. — Εθνικό & Καποδιστριακό Πανεπιστήμιο Αθηνών (ΕΚΠΑ)</span></span></div>
-          <div class="cred"><span class="c-ix">003</span><span class="c-main"><b>EMDR Τραυματοθεραπεία</b><span>Εξειδίκευση — TACT Hellas</span></span></div>
-          <div class="cred"><span class="c-ix">004</span><span class="c-main"><b>Διεθνής αναγνώριση</b><span>1ο βραβείο παρουσίασης, American Counseling Association (EB-ACA) · Μέλος ΣΕΨ & APA</span></span></div>
-        </div>
-        <blockquote class="pullquote reveal d1">
-          <p>«Αποσυνδέω τη σχέση μας τόσο από την παθολογία όσο και από την οικονομική συναλλαγή — αποκαλώντας τους <em>θεραπευόμενους</em>.»</p>
-          <cite>— Επί της συστημικής προσέγγισης</cite>
-        </blockquote>
       </div>
     </div>
   </div>
@@ -569,11 +519,7 @@ footer{background:var(--ink);color:var(--bone); border-top: 1px solid var(--line
 <section class="note-band" aria-label="Η σχέση της θεραπείας">
   <div class="wrap">
     <div class="note-grid">
-      <p class="nq reveal">Ο θεραπευόμενος δεν έρχεται για να <b>συμμορφωθεί</b>. Έρχεται για να <b>ακουστεί.</b></p>
-      <div class="nbody reveal d1">
-        <p>Στη ψυχοθεραπεία συνοδεύουμε τον θεραπευόμενο να στραφεί στον εαυτό του και να πει την ιστορία του, το αφήγημά του, μέχρι να βρει τη λύση στα προβλήματα που τον απασχολούν. Την λύση την έχει μέσα του — απλά δεν το γνωρίζει.</p>
-        <p>Ένας «φροντισμένος» εαυτός, μέσω της ψυχοθεραπείας, θα φροντίσει να κάνει υγιείς σχέσεις σε προσωπικό, ερωτικό, επαγγελματικό και κοινωνικό επίπεδο.</p>
-      </div>
+      <p class="nq reveal">Ένας «φροντισμένος» εαυτός, μέσω της ψυχοθεραπείας, θα φροντίσει να κάνει <b>υγιείς σχέσεις</b> σε προσωπικό, ερωτικό, επαγγελματικό και κοινωνικό επίπεδο.</p>
     </div>
   </div>
 </section>
@@ -595,7 +541,26 @@ footer{background:var(--ink);color:var(--bone); border-top: 1px solid var(--line
         </button>
         <div class="svc-panel"><div class="svc-panel-in">
           <div class="tags"><span>EMDR Τραυματοθεραπεία</span><span>Αντιμετώπιση τραυματικών εμπειριών</span></div>
-          <div class="txt"><p>Κάποια βιώματα χαράσσονται βαθιά μέσα μας, επηρεάζοντας τον τρόπο που αναπνέουμε, που σκεφτόμαστε και που αντιδρούμε στο παρόν. Αξιοποιώντας την εξειδίκευσή της στην Τραυματοθεραπεία EMDR, η ψυχολόγος εφαρμόζει τη μέθοδο της διμερούς διέγερσης για να βοηθήσει τον εγκέφαλο να επεξεργαστεί και να «αρχειοθετήσει» ομαλά τις οδυνηρές μνήμες. Το τραύμα παύει να προκαλεί συναισθηματικό πανικό και μετατρέπεται σε ένα γεγονός που ανήκει, πλέον, οριστικά στο παρελθόν.</p></div>
+          <div class="txt">
+            <p>Η βία σε κάθε μορφή της, είτε λεκτική, είτε σωματική, ή ψυχολογική προκαλεί τραύματα σωματικά και ψυχικά. Δεν χρειάζεται να είναι κάποιος στρατιώτης στον πόλεμο, ο οποίος όταν επαναπατρίζεται, έχει εκρήξεις θυμού ή απουσία συναισθήματος, λόγω ψυχικού τραύματος. Για πολλούς ανθρώπους ο πόλεμος ξεκινάει από το σπίτι τους. Ψυχικό τραύμα αφορά, για παράδειγμα, άτομα που έχουν υπάρξει θύματα σεξουαλικής κακοποίησης στην παιδική τους ηλικία, είτε είχαν γίνει μάρτυρες ξυλοδαρμού του γονέα τους, είτε έχουν υποστεί σωματική ή λεκτική βία από τον/την σύντροφό τους ή ακόμα και τον οικονομικό και επαγγελματικό αποκλεισμό. Άτομα που είχαν τροχαίο ατύχημα ή έχουν διαγνωστεί με κάποια σοβαρή ασθένεια, αντιμετώπισαν τρομοκρατική ενέργεια ή φυσική καταστροφή.</p>
+            <p>Από το αρχαιοελληνικό ρήμα «τιτρώσκω» που σημαίνει «πληγώνω» προέρχεται η λέξη «τραύμα», η οποία χρησιμοποιήθηκε στους στρατιώτες που είχαν υποστεί πληγές ή τραυματισμό που προκλήθηκαν από τη διάτρηση του θώρακος. Η ιατρική έννοια του τραύματος είναι «η ξαφνική ή βίαιη λύση της συνέχειας των ιστών του δέρματος και συνήθως αιμορραγία» (Μπαμπινιώτης, 2008).</p>
+            <p>Ο ψυχικός τραυματισμός εκδηλώνεται όταν κάποιο στρεσογόνο γεγονός βιωθεί και προκαλέσει «ρήγμα» στο ψυχισμό ενός ατόμου. Δηλαδή το άτομο όσες ικανότητες και άμυνες επιστρατεύσει δεν επαρκούν για να το ξεπεράσει. Ο τραυματισμός εγγράφεται ανεξίτηλα στην μνήμη, καθώς και στο σώμα χωρίς να είναι σε θέση το άτομο να μπορεί να το εξαλείψει. Με αποτέλεσμα ενοχλητικές αναμνήσεις μπορούν να αποθηκευτούν στον εγκέφαλο μεμονωμένα και παραμένουν κλειδωμένα στο νευρικό σύστημα με τις αρχικές εικόνες, τους ήχους, τις σκέψεις και τα συναισθήματα που εμπλέκονται.</p>
+            <p>Όλοι οι άνθρωποι διαθέτουμε ένα φυσικό σύστημα «αυτοΐασης» που έχει εξελιχθεί και μας επιτρέπει να επανορθώνουμε τις αντιδράσεις μας σε ενοχλητικά γεγονότα από μια αρχική δυσλειτουργική κατάσταση ανισορροπίας σε μια προσαρμοστική κατάσταση επίλυσης. Υπό κανονικές συνθήκες, το μυαλό έχει τη φυσική ικανότητα να επεξεργάζεται ενοχλητικές στρεσογόνες εμπειρίες χωρίς θεραπευτική παρέμβαση, για παράδειγμα, μιλώντας σε ένα φίλο μας ή κατά τη διάρκεια του ύπνου μας.</p>
+            <p>Κάποιοι τα καταφέρνουν, για τους περισσότερους η ανάμνηση ενός δυσάρεστου γεγονότος κάποια στιγμή ξεθωριάζει ή μεταμορφώνεται σε κάτι λιγότερο δυσάρεστο. Κάποιοι όμως παραμένουν καθηλωμένοι στο περιστατικό του τραυματισμού αδυνατώντας να το «μεταβολίσουν» ψυχικά. Άλλα άτομα κατακερματίζεται το «εγώ» τους και οδηγούνται στη ψυχική αποδιοργάνωση, καταφεύγοντας στη χρήση αλκοόλ ή ουσιών στην προσπάθεια να καταστείλουν την εσωτερική τους ένταση και τον ψυχικό πόνο.</p>
+            <p>Η Ψυχοθεραπεία EMDR είναι μια σχετικά βραχύχρονη θεραπεία και καθοδηγείται από το μοντέλο AIP (Αdaptive Information Processing), σύμφωνα με το οποίο το υψηλό στρες και οι αντίξοες ή τραυματικές εμπειρίες αποθηκεύονται στο μυαλό σε μια «ακατέργαστη» μορφή, οι οποίες συμβάλλουν σε δυσφορικά συμπτώματα.</p>
+            <p>Η παρέμβαση με τη θεραπεία EMDR είναι η μετατροπή της δυσλειτουργικής αφομοίωσης μιας τραυματικής εμπειρίας σε λειτουργική, μέσω αμφίπλευρης διέγερσης (BLS), που περιλαμβάνει ρυθμικές εναλλασσόμενες κινήσεις ή ήχους που ενεργοποιούν τα δύο ημισφαίρια του εγκεφάλου. Σκοπός της είναι να βοηθήσει τον εγκέφαλο να επεξεργαστεί τραυματικές αναμνήσεις, καθιστώντας τες λιγότερο ενοχλητικές. Η BLS μπορεί να πραγματοποιηθεί μέσω διεστιακής κίνησης των ματιών, ακουστικών τόνων ή απτικής διέγερσης, όπως το χτύπημα στα γόνατα ή στα χέρια. Βοηθά στην επεξεργασία τραυματικών αναμνήσεων για την ανακούφιση από ψυχική και σωματική δυσφορία, αξιοποιώντας το φυσικό σύστημα αυτοΐασης του εγκεφάλου.</p>
+            <p>Τρόποι εφαρμογής της αμφίπλευρης διέγερσης (BLS):</p>
+            <ul class="svc-list-ul">
+              <li><b>Οπτική:</b> Ο θεραπευτής κινεί το δάχτυλό του ή μια μπάρα φωτός μπρος-πίσω, με τα μάτια του ασθενούς να ακολουθούν την κίνηση. Αυτή η μέθοδος είναι παρόμοια με τις κινήσεις των ματιών κατά τη διάρκεια του ύπνου REM, που είναι σημαντικό στάδιο για την επεξεργασία μνημών.</li>
+              <li><b>Ακουστική:</b> Εναλλάσσονται ακουστικοί τόνοι ή ήχοι στα αριστερά και δεξιά αυτιά του ασθενούς μέσω ακουστικών.</li>
+              <li><b>Απτική:</b> Γίνονται διαδοχικά χτυπήματα σε διάφορα σημεία του σώματος, όπως τα γόνατα ή τα χέρια (Butterfly Hug - "αγκαλιά πεταλούδας").</li>
+            </ul>
+            <p>Όταν είμαστε «κατακλυσμένοι από τραυματικές εμπειρίες», ο εγκέφαλός μας χάνει την ικανότητα να διατηρεί την νευρωνική ολοκλήρωση σε όλα τα δίκτυα που είναι αφιερωμένα στη συμπεριφορά, το συναίσθημα, την αίσθηση και τη συνειδητή επίγνωση.</p>
+            <p>Όταν οι αναμνήσεις αποθηκεύονται σε αισθητηριακά και συναισθηματικά δίκτυα αλλά αποσυνδέονται από εκείνα που οργανώνουν το γνωστικό κομμάτι, τη γνώση και την προοπτική, γινόμαστε ευάλωτοι σε εισβολές προηγούμενων εμπειριών που ενεργοποιούνται από περιβαλλοντικά και εσωτερικά ερεθίσματα.</p>
+            <p>Στη διαδικασία της ψυχοθεραπείας, προσπαθούμε να επανενσωματώσουμε αυτά τα αποσυνδεδεμένα δίκτυα επεξεργάζοντας συνειδητά τραυματικές αναμνήσεις. Αυτή η επανένταξη, με τη σειρά της, επιτρέπει στα δίκτυα συνειδητής φλοιώδους επεξεργασίας να αναπτύξουν την ικανότητα να αναστέλλουν και να ελέγχουν παρελθούσες «τραυματικές αναμνήσεις».</p>
+            <br>
+            <p style="font-size: 0.85rem; opacity: 0.8;"><b>ΒΙΒΛΙΟΓΡΑΦΙΑ:</b><br>Shapiro, F. (2017). Eye movement desensitization and reprocessing (EMDR) therapy: Basic principles, protocols, and procedures. Guilford Publications.<br>Van der Kolk, B. (2014). The body keeps the score: Brain, mind, and body in the healing of trauma. New York, 3.</p>
+          </div>
         </div></div>
       </div>
 
@@ -607,7 +572,20 @@ footer{background:var(--ink);color:var(--bone); border-top: 1px solid var(--line
         </button>
         <div class="svc-panel"><div class="svc-panel-in">
           <div class="tags"><span>Διαχείριση εργασιακού στρες</span><span>Ενίσχυση ψυχολογικής ανθεκτικότητας</span></div>
-          <div class="txt"><p>Το σύγχρονο επαγγελματικό περιβάλλον απαιτεί τεράστια αποθέματα ενέργειας, οδηγώντας συχνά σε burnout και επαγγελματική εξουθένωση. Βασισμένη στην πλούσια εμπειρία της στη διαχείριση ανθρώπινου δυναμικού (Human Resources) και στις γνωσιακές επιστήμες, η ψυχολόγος εφαρμόζει στοχευμένες παρεμβάσεις για εργαζόμενους και στελέχη. Μαθαίνετε να θέτετε υγιή όρια, να διαχειρίζεστε το εργασιακό στρες και να προσαρμόζεστε αποτελεσματικά στις υψηλές επαγγελματικές απαιτήσεις.</p></div>
+          <div class="txt">
+            <p>Οι σύγχρονες επαγγελματικές απαιτήσεις, οι αυξημένες ευθύνες και οι γρήγοροι ρυθμοί εργασίας μπορούν να επηρεάσουν σημαντικά την ψυχική υγεία και την απόδοση των εργαζομένων. Το παρατεταμένο άγχος συχνά οδηγεί σε σωματική και ψυχική εξάντληση, μειωμένη συγκέντρωση, επαγγελματική κόπωση (burnout) και δυσκολίες στις εργασιακές σχέσεις.</p>
+            <p>Ως ψυχολόγος με πολυετή εμπειρία στις Ένοπλες Δυνάμεις και εξειδίκευση στη Γνωσιακή Συμπεριφορική Ψυχοθεραπεία (CBT), στη Συστημική Θεραπεία και στην EMDR Θεραπεία, υποστηρίζω εργαζόμενους, στελέχη και ομάδες να διαχειρίζονται αποτελεσματικά τις προκλήσεις του εργασιακού περιβάλλοντος. Παράλληλα, η ερευνητική μου ενασχόληση με την ψυχική ανθεκτικότητα στις Ένοπλες Δυνάμεις έχει ενισχύσει την κατανόησή μου για τους παράγοντες που βοηθούν τους ανθρώπους να ανταποκρίνονται σε συνθήκες υψηλής πίεσης.</p>
+            <p>Μέσα από εξατομικευμένες συνεδρίες ή ομαδικές παρεμβάσεις, οι συμμετέχοντες μαθαίνουν να:</p>
+            <ul class="svc-list-ul">
+              <li>Αναγνωρίζουν έγκαιρα τα σημάδια του στρες και της επαγγελματικής εξουθένωσης.</li>
+              <li>Διαχειρίζονται αποτελεσματικά το άγχος και την ψυχολογική πίεση.</li>
+              <li>Θέτουν υγιή προσωπικά και επαγγελματικά όρια.</li>
+              <li>Ενισχύουν την ψυχική ανθεκτικότητα και την προσαρμοστικότητά τους.</li>
+              <li>Βελτιώνουν την επικοινωνία και τη συνεργασία στον εργασιακό χώρο.</li>
+              <li>Αναπτύσσουν δεξιότητες αυτοφροντίδας και ισορροπίας μεταξύ επαγγελματικής και προσωπικής ζωής.</li>
+            </ul>
+            <p>Στόχος είναι η δημιουργία ενός υγιούς εργασιακού περιβάλλοντος, όπου οι άνθρωποι μπορούν να αποδίδουν αποτελεσματικά χωρίς να θυσιάζουν την ψυχική τους ευεξία, διατηρώντας παράλληλα υψηλά επίπεδα ικανοποίησης και ποιότητας ζωής.</p>
+          </div>
         </div></div>
       </div>
 
@@ -623,51 +601,26 @@ footer{background:var(--ink);color:var(--bone); border-top: 1px solid var(--line
         </div></div>
       </div>
 
-      <div class="svc reveal d4">
-        <button class="svc-head" aria-expanded="false">
-          <span class="svc-num">04</span>
-          <span class="svc-title">Συμβουλευτική Εφήβων (15+) & Υποστήριξη Οικογένειας</span>
-          <span class="svc-toggle" aria-hidden="true"></span>
-        </button>
-        <div class="svc-panel"><div class="svc-panel-in">
-          <div class="tags"><span>Ατομικές συνεδρίες εφήβων</span><span>Ομάδες πρόληψης εφήβων</span><span>Οικογενειακή προσέγγιση</span></div>
-          <div class="txt"><p>Έχοντας διατελέσει ερευνητής και έχοντας αποκτήσει σημαντική κλινική εμπειρία στην καθοδήγηση ομάδων πρόληψης εφήβων, η θεραπεύτρια προσφέρει ένα ασφαλές καταφύγιο για νέους από 15 ετών και άνω. Σε ένα περιβάλλον απόλυτης εχεμύθειας, οι έφηβοι υποστηρίζονται στη διαχείριση του σχολικού άγχους και των ζητημάτων ταυτότητας. Παράλληλα, παρέχεται συμβουλευτική για ολόκληρο το οικογενειακό σύστημα.</p></div>
-        </div></div>
-      </div>
     </div>
   </div>
 </section>
 
-<!-- ============ PILLARS / ARCHITECTURE OF RESILIENCE ============ -->
+<!-- ============ PILLARS / MENTAL RESILIENCE ============ -->
 <section class="sec pillars" id="pillars">
   <div class="wrap">
     <div class="sec-head reveal">
       <span class="coord">Γ.03 — ΠΡΟΣΕΓΓΙΣΗ</span>
       <h2>Η αρχιτεκτονική της <em>ψυχικής ανθεκτικότητας.</em></h2>
     </div>
-    <p class="pillars-lead reveal">Για μένα, η ψυχική ανθεκτικότητα δεν είναι μια θεωρία γραμμένη σε κάποιο βιβλίο· είναι μια <em>εφαρμοσμένη επιστήμη</em>, την οποία μελετώ και υπηρετώ καθημερινά, επί σειρά ετών, στην πρώτη γραμμή της ψυχικής υγείας. Η θητεία μου με έφερε αντιμέτωπη με το πιο απαιτητικό ανθρώπινο περιβάλλον — εκεί, η ικανότητα να αντέχει κανείς, να προσαρμόζεται και να ανασυντάσσεται δεν είναι πολυτέλεια· είναι ζήτημα επιβίωσης. Αυτή τη «γειωμένη» προσέγγιση μεταφέρω στο θεραπευτικό μου δωμάτιο.</p>
-
-    <div class="pillar-grid">
-      <div class="pillar reveal d1">
-        <svg class="p-glyph" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M20 4v32M8 12v16M32 12v16M14 8v24M26 8v24"/></svg>
-        <span class="p-ix">i.</span>
-        <h3>Μια σχέση απόλυτης σταθερότητας</h3>
-        <p>Θα βρείτε ένα πλαίσιο απόλυτης πειθαρχίας, συνέπειας και ασφάλειας. Η θητεία μου με έχει διδάξει να διατηρώ την ψυχραιμία μου και να στέκομαι ως ακλόνητο στήριγμα δίπλα στον θεραπευόμενο — όσο βαρύ κι αν είναι το συναισθηματικό φορτίο, το άγχος ή το τραύμα.</p>
+    <div class="resilience-flex">
+      <div class="res-text reveal">
+        <p class="pillars-lead">Η Αμερικάνικη Ψυχολογική Εταιρεία (APA, 2015), ορίζει την ανθεκτικότητα ως «τη διαδικασία της προσαρμογής μπροστά στις αντιξοότητες, το τραύμα, την τραγωδία, τις απειλές ή τις σημαντικές πηγές άγχους, όπως οικογενειακές και διαπροσωπικές σχέσεις, σοβαρά προβλήματα υγείας ή προβλήματα στο χώρο της εργασίας και οικονομικές αντιξοότητες».</p>
+        <p class="pillars-lead">Η ψυχική ανθεκτικότητα και η ευαλωτότητα θεωρούνται ψυχοβιολογικές καταστάσεις που συνδέονται σαν αλληλένδετοι πόλοι μεταξύ τους: δηλαδή ταυτόχρονα με την τραυματική εμπειρία ενεργοποιείται και ένας υγιής πυρήνας ανθεκτικότητας!</p>
       </div>
-      <div class="pillar reveal d2">
-        <svg class="p-glyph" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><circle cx="20" cy="20" r="4"/><circle cx="8" cy="9" r="3"/><circle cx="32" cy="9" r="3"/><circle cx="8" cy="31" r="3"/><circle cx="32" cy="31" r="3"/><path d="M11 11l6 6M29 11l-6 6M11 29l6-6M29 29l-6-6"/></svg>
-        <span class="p-ix">ii.</span>
-        <h3>Η συστημική χαρτογράφηση</h3>
-        <p>Κανένας άνθρωπος δεν λυγίζει στο κενό. Το άγχος, οι κρίσεις πανικού ή η θλίψη σας συνδέονται με τα «συστήματα» στα οποία ανήκετε: την οικογένεια, το επαγγελματικό περιβάλλον, τις κοινωνικές απαιτήσεις. Η δουλειά μας είναι να χαρτογραφήσουμε αυτές τις πιέσεις — και να βρούμε πού κρύβονται οι δικές σας αόρατες δυνάμεις.</p>
-      </div>
-      <div class="pillar reveal d3">
-        <svg class="p-glyph" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M20 6c-7 0-10 5-10 9 0 3 2 5 2 8 0 4-1 5-1 7h18c0-2-1-3-1-7 0-3 2-5 2-8 0-4-3-9-10-9Z"/><path d="M16 30v4M24 30v4M20 6v24"/></svg>
-        <span class="p-ix">iii.</span>
-        <h3>Επιστήμη & ηθική πρωτοπορία</h3>
-        <p>Η ψυχική υγεία εξελίσσεται ραγδαία. Η διαρκής ερευνητική μου δραστηριότητα σε διεθνή συνέδρια και η ενασχόλησή μου με την ενσωμάτωση της Τεχνητής Νοημοσύνης στην Ψυχική Υγεία αποτελούν για εσάς την εγγύηση: οι μέθοδοι που εφαρμόζουμε είναι σύγχρονες, ηθικά άρτιες και επιστημονικά τεκμηριωμένες.</p>
+      <div class="resilience-img reveal d1">
+        <img src="https://github.com/agelmet/ARANITOU/blob/main/newaraannaa.png?raw=true" alt="Ψυχική Ανθεκτικότητα">
       </div>
     </div>
-    <p class="pillars-foot reveal">Όταν νιώσετε έτοιμοι να αφήσετε πίσω το βάρος της πίεσης, <b>είμαι εδώ για να βαδίσουμε μαζί — βήμα-βήμα.</b></p>
   </div>
 </section>
 
@@ -680,19 +633,19 @@ footer{background:var(--ink);color:var(--bone); border-top: 1px solid var(--line
     </div>
     <div class="tri-grid reveal d1">
       <div class="tri">
-        <span class="t-no">i — Work</span>
+        <span class="t-no">WORK</span>
         <div class="t-gr"><svg viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><rect x="14" y="22" width="32" height="24" rx="2"/><path d="M24 22v-5a3 3 0 0 1 3-3h6a3 3 0 0 1 3 3v5M14 32h32"/></svg></div>
         <h3>Εργασία<span class="gr">παραγωγή & ευθύνη</span></h3>
         <p>Η εργασία συνεπάγεται παραγωγική προσπάθεια και ευθύνη — ο τομέας όπου εκφράζουμε ποιοι είμαστε και εξελισσόμαστε σε αυτό που θα μπορούσαμε να γίνουμε.</p>
       </div>
       <div class="tri">
-        <span class="t-no">ii — Love</span>
+        <span class="t-no">LOVE</span>
         <div class="t-gr"><svg viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M30 46S14 36 14 25a8 8 0 0 1 16-3 8 8 0 0 1 16 3c0 11-16 21-16 21Z"/></svg></div>
         <h3>Αγάπη<span class="gr">σύνδεση & σχέσεις</span></h3>
         <p>Η αγάπη περιλαμβάνει τις συνδέσεις και τις σχέσεις μας με τους άλλους ανθρώπους — το πεδίο όπου παλεύουμε με αυτό που υπήρξαμε.</p>
       </div>
       <div class="tri">
-        <span class="t-no">iii — Play</span>
+        <span class="t-no">PLAY</span>
         <div class="t-gr"><svg viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><circle cx="30" cy="30" r="15"/><path d="M30 15v30M15 30h30M20 20l20 20M40 20L20 40"/></svg></div>
         <h3>Παιχνίδι<span class="gr">απόλαυση & επαναφόρτιση</span></h3>
         <p>Το παιχνίδι περιλαμβάνει δραστηριότητες για απόλαυση, χαλάρωση και επαναφόρτιση. Όσο παραμελημένο, τόσο απαραίτητο.</p>
@@ -702,76 +655,12 @@ footer{background:var(--ink);color:var(--bone); border-top: 1px solid var(--line
   </div>
 </section>
 
-<!-- ============ KNOWLEDGE / ESSAYS ============ -->
-<section class="sec know" id="knowledge">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <span class="coord">Ε.05 — ΓΝΩΣΗ</span>
-      <h2>Η επιστήμη <em>πίσω από τη θεραπεία.</em></h2>
-    </div>
-
-    <!-- Essay 1: EMDR / trauma -->
-    <article class="essay reveal">
-      <div class="e-content">
-        <p class="e-tag">EMDR · Τραυματοθεραπεία</p>
-        <h3>Όταν το τραύμα μένει <em>κλειδωμένο</em> στο σώμα.</h3>
-        <div class="e-txt">
-          <p>Από το αρχαιοελληνικό ρήμα «τιτρώσκω» — πληγώνω — προέρχεται η λέξη «τραύμα». Ο ψυχικός τραυματισμός εκδηλώνεται όταν ένα στρεσογόνο γεγονός προκαλέσει «ρήγμα» στον ψυχισμό: όσες άμυνες κι αν επιστρατεύσει το άτομο, δεν επαρκούν. Η ανάμνηση εγγράφεται ανεξίτηλα στη μνήμη και στο σώμα, παραμένοντας κλειδωμένη στο νευρικό σύστημα με τις αρχικές εικόνες, τους ήχους και τα συναισθήματα.</p>
-          <p class="e-pull">Δεν χρειάζεται να είναι κάποιος στρατιώτης στον πόλεμο. Για πολλούς ανθρώπους, ο πόλεμος ξεκινάει από το σπίτι τους.</p>
-          <p>Η Ψυχοθεραπεία EMDR καθοδηγείται από το μοντέλο AIP: το υψηλό στρες και οι τραυματικές εμπειρίες αποθηκεύονται «ακατέργαστες». Μέσω της αμφίπλευρης διέγερσης (BLS) — ρυθμικών εναλλασσόμενων ερεθισμάτων που ενεργοποιούν τα δύο ημισφαίρια — βοηθάμε τον εγκέφαλο να επεξεργαστεί τις τραυματικές αναμνήσεις, αξιοποιώντας το φυσικό του σύστημα αυτοΐασης.</p>
-        </div>
-        <div class="bls-row">
-          <div class="bls"><span class="bk">Οπτική</span><span class="bv">Κίνηση των ματιών που ακολουθούν, παρόμοια με τον ύπνο REM.</span></div>
-          <div class="bls"><span class="bk">Ακουστική</span><span class="bv">Εναλλασσόμενοι τόνοι στο αριστερό & δεξί αυτί.</span></div>
-          <div class="bls"><span class="bk">Απτική</span><span class="bv">Διαδοχικά χτυπήματα — η «αγκαλιά πεταλούδας».</span></div>
-        </div>
-      </div>
-      <div class="e-figs reveal d2">
-        <figure class="figure"><img class="zoomable" src="https://raw.githubusercontent.com/agelmet/ARANITOU/refs/heads/main/emdr2.png" alt="Το μάτι ως σύμβολο της EMDR θεραπείας τραύματος" loading="lazy"><figcaption>Ψυχικό τραύμα · EMDR</figcaption></figure>
-        <figure class="figure"><img class="zoomable" src="https://raw.githubusercontent.com/agelmet/ARANITOU/refs/heads/main/mind.png" alt="Απεικόνιση του εγκεφάλου και της επεξεργασίας του τραύματος" loading="lazy"><figcaption>Επεξεργασία της μνήμης</figcaption></figure>
-      </div>
-    </article>
-
-    <!-- Essay 2: Neuroplasticity / relationships -->
-    <article class="essay rev reveal">
-      <div class="e-content">
-        <p class="e-tag">Νευροεπιστήμη · Σχέσεις</p>
-        <h3>Ο εγκέφαλος είναι ένα <em>κοινωνικό όργανο.</em></h3>
-        <div class="e-txt">
-          <p>Σύμφωνα με τις νευροεπιστήμες, όπως κάθε ζωντανό σύστημα, ο εγκέφαλος εξαρτάται από τις αλληλεπιδράσεις με άλλους για την επιβίωσή του. Οι φιλίες, ο γάμος, η ψυχοθεραπεία — οποιαδήποτε ουσιαστική σχέση — μπορούν να επανενεργοποιήσουν τις νευροπλαστικές διεργασίες και να αλλάξουν τις δομές και τη βιοχημεία του εγκεφάλου.</p>
-          <p class="e-pull">Μεμονωμένοι νευρώνες ή μεμονωμένοι ανθρώπινοι εγκέφαλοι δεν υπάρχουν στη φύση. Χωρίς αμοιβαία διεγερτικές αλληλεπιδράσεις, οι νευρώνες — και οι άνθρωποι — μαραίνονται.</p>
-          <p>Στους νευρώνες η διαδικασία ονομάζεται απόπτωση· στους ανθρώπους, κατάθλιψη και θλίψη. Γι' αυτό μια αποτελεσματική ψυχοθεραπεία προάγει την εγκεφαλική απαρτίωση, δημιουργώντας συνδέσεις ανάμεσα στη λογική του αριστερού και το συναίσθημα του δεξιού ημισφαιρίου — και ανάμεσα στις ανώτερες νοητικές λειτουργίες και τις ενστικτώδεις αντιδράσεις της επιβίωσης.</p>
-        </div>
-      </div>
-      <div class="e-figs reveal d2">
-        <figure class="figure"><img class="zoomable" src="https://raw.githubusercontent.com/agelmet/ARANITOU/refs/heads/main/article1.png" alt="Ο εγκέφαλος ως φυτό που ποτίζεται — νευροπλαστικότητα" loading="lazy"><figcaption>Νευροπλαστικότητα</figcaption></figure>
-        <figure class="figure"><img class="zoomable" src="https://raw.githubusercontent.com/agelmet/ARANITOU/refs/heads/main/eswter2.png" alt="Δύο εγκέφαλοι σε αλληλεπίδραση — η συστημική σχέση" loading="lazy"><figcaption>Εγκέφαλοι σε δίκτυα</figcaption></figure>
-      </div>
-    </article>
-
-    <!-- Essay 3: Systemic / CBT note -->
-    <article class="essay reveal">
-      <div class="e-content">
-        <p class="e-tag">Συστημική Θεωρία · CBT</p>
-        <h3>Δεν λυγίζουμε <em>στο κενό.</em></h3>
-        <div class="e-txt">
-          <p>Η συστημική θεραπεία μετακινείται από τις ατομοκεντρικές προσεγγίσεις στην ανάδειξη της σημασίας των σχέσεων. Τα προβλήματα ενός ατόμου δεν είναι μόνο αποτέλεσμα ενδοψυχικών συγκρούσεων, αλλά προϊόν αλληλεπιδράσεων με το ευρύτερο σύστημα — με πιο σημαντικό πλαίσιο την οικογένεια. Μια συμπεριφορά που μοιάζει προβληματική έξω από το σύστημα, μέσα σε αυτό αποκτά τη δική της λειτουργικότητα.</p>
-          <p>Παράλληλα, η Γνωσιακή Συμπεριφορική Θεραπεία θυμίζει τον Επίκτητο: «ταράσσει τους ανθρώπους ου τα πράγματα, αλλά τα περί των πραγμάτων δόγματα». Δεν είναι η κατάσταση που καθορίζει τι αισθανόμαστε, αλλά ο τρόπος με τον οποίο αποδίδουμε νόημα σε αυτή. Στόχος είναι η τροποποίηση του μοτίβου σκέψης, ώστε να επιτευχθεί μια μόνιμη συναισθηματική αλλαγή.</p>
-        </div>
-      </div>
-      <div class="e-figs reveal d2">
-        <figure class="figure"><img class="zoomable" src="https://raw.githubusercontent.com/agelmet/ARANITOU/refs/heads/main/eswter1.png" alt="Νοητική επεξεργασία και γνωσιακή θεραπεία" loading="lazy"><figcaption>Γνωσιακή επεξεργασία</figcaption></figure>
-      </div>
-    </article>
-  </div>
-</section>
-
 <!-- ============ SPACE / GALLERY ============ -->
 <section class="sec space" aria-label="Ο χώρος">
   <div class="wrap">
     <div class="sec-head reveal">
-      <span class="coord">Ϛ.06 — Ο ΧΩΡΟΣ</span>
-      <h2>Ένα ασφαλές δωμάτιο <em>στον Χολαργό.</em></h2>
+      <span class="coord">Ε.05 — Ο ΧΩΡΟΣ</span>
+      <h2>Ένας ασφαλής χώρος <em>στον Χολαργό.</em></h2>
     </div>
     <p class="space-lead reveal">Ένας χώρος σχεδιασμένος για ηρεμία, εχεμύθεια και σταθερότητα — όπου η θεραπευτική σχέση μπορεί να ανθίσει χωρίς βιασύνη.</p>
     <div class="gal reveal d1">
@@ -789,13 +678,13 @@ footer{background:var(--ink);color:var(--bone); border-top: 1px solid var(--line
 <section class="sec faq" aria-label="Συχνές ερωτήσεις">
   <div class="wrap">
     <div class="sec-head reveal">
-      <span class="coord">Ζ.07 — ΕΡΩΤΗΣΕΙΣ</span>
+      <span class="coord">Ζ.06 — ΕΡΩΤΗΣΕΙΣ</span>
       <h2>Πριν την <em>πρώτη συνεδρία.</em></h2>
     </div>
     <div class="fq-list reveal d1">
       <div class="fq">
         <button class="fq-q" aria-expanded="false"><span class="q-ix">01</span><span class="q-t">Οι συνεδρίες είναι εμπιστευτικές;</span><span class="q-pl" aria-hidden="true"></span></button>
-        <div class="fq-a"><p>Ναι. Όλες οι συνεδρίες είναι απόρρητες, βάσει του άρθρου 9 του νόμου 991/79. Η εχεμύθεια αποτελεί θεμέλιο της θεραπευτικής σχέσης — τόσο για ενήλικες όσο και για εφήβους.</p></div>
+        <div class="fq-a"><p>Ναι. Όλες οι συνεδρίες είναι απόρρητες, βάσει του άρθρου 9 του νόμου 991/79. Η εχεμύθεια αποτελεί θεμέλιο της θεραπευτικής σχέσης.</p></div>
       </div>
       <div class="fq">
         <button class="fq-q" aria-expanded="false"><span class="q-ix">02</span><span class="q-t">Μπορώ να κάνω συνεδρίες εξ αποστάσεως;</span><span class="q-pl" aria-hidden="true"></span></button>
@@ -803,11 +692,11 @@ footer{background:var(--ink);color:var(--bone); border-top: 1px solid var(--line
       </div>
       <div class="fq">
         <button class="fq-q" aria-expanded="false"><span class="q-ix">03</span><span class="q-t">Σε ποιες ηλικίες απευθύνεστε;</span><span class="q-pl" aria-hidden="true"></span></button>
-        <div class="fq-a"><p>Σε εφήβους από 15 ετών και άνω, καθώς και σε ενήλικες. Για τους εφήβους παρέχεται παράλληλα συμβουλευτική για ολόκληρο το οικογενειακό σύστημα.</p></div>
+        <div class="fq-a"><p>Σε ενήλικες.</p></div>
       </div>
       <div class="fq">
         <button class="fq-q" aria-expanded="false"><span class="q-ix">04</span><span class="q-t">Γιατί ονομάζετε τους ανθρώπους «θεραπευόμενους»;</span><span class="q-pl" aria-hidden="true"></span></button>
-        <div class="fq-a"><p>Λόγω της μετεκπαίδευσής μου στη συστημική ψυχοθεραπεία, αποσυνδέω τη σχέση μας τόσο από την παθολογία (ασθενής) όσο και από την οικονομική συναλλαγή (πελάτης). Ο θεραπευόμενος δεν έρχεται για συμμόρφωση ή για να τον αλλάξουν — έρχεται για να ακουστεί.</p></div>
+        <div class="fq-a"><p>Λόγω της μετεκπαίδευσής μου στη συστημική ψυχοθεραπεία, αποσυνδέω τη σχέση μας τόσο από την παθολογία (ασθενής) όσο και από την οικονομική συναλλαγή (πελάτης).</p></div>
       </div>
       <div class="fq">
         <button class="fq-q" aria-expanded="false"><span class="q-ix">05</span><span class="q-t">Πώς κλείνω ραντεβού;</span><span class="q-pl" aria-hidden="true"></span></button>
@@ -820,7 +709,7 @@ footer{background:var(--ink);color:var(--bone); border-top: 1px solid var(--line
 <!-- ============ CONTACT ============ -->
 <section class="contact" id="contact">
   <div class="wrap">
-    <span class="coord reveal">Η.08 — ΕΠΙΚΟΙΝΩΝΙΑ</span>
+    <span class="coord reveal">Η.07 — ΕΠΙΚΟΙΝΩΝΙΑ</span>
     <h2 class="reveal">Όταν νιώσετε <em>έτοιμοι.</em></h2>
     <p class="contact-intro reveal d1">Είμαι εδώ για να βαδίσουμε μαζί, βήμα-βήμα, σε αυτή τη διαδρομή. Κλείστε μια πρώτη συνεδρία — δια ζώσης στον Χολαργό ή online.</p>
     <div class="contact-grid">
